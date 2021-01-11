@@ -10,5 +10,5 @@ git clone https://github.com/salihcodev/couch-furniture-design.git
 cd couch-furniture-design
 ```
 ```bash
- yarn start
+yarn start
 ```
