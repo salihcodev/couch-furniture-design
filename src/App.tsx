@@ -6,13 +6,19 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './views/home/Home.page';
 import Error404Page from './views/error404/Error404.page';
 
+// COMPONENTS:
+import Header from './components/header/Header.comp';
+
 // ROOT COMPONENT:=>
 const CouchFurnitureDesignApp = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="*" component={Error404Page} />
-    </Switch>
+    <>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="*" component={Error404Page} />
+      </Switch>
+    </>
   );
 };
 

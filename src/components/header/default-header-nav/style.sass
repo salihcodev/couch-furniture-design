@@ -1,0 +1,59 @@
+// importing:::
+@import '../../../sass-utl/_mixins'
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_animation'
+
+// styling:::
+nav.default-header-nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 4rem
+  padding: 0.5rem
+  .nav-logo
+    flex-grow: 1
+    width: 3rem
+  .nav-routes
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-grow: 2
+    .wing
+      &.left-routes
+        flex-grow: 3
+        ul.routes-list
+          justify-content: flex-start
+      &.right-routes
+        flex-grow: 1
+
+      // globaly styled routes
+      ul.routes-list
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        @include no-list-style
+        li.nav-route.reg-route
+          @include normal-route()
+        li.nav-route.icon-route
+          margin: 0.5rem
+          a.route-link
+            font-weight: bold
+            color: $alt_cl-1
+            font-size: 1.5rem
+            text-transform: uppercase
+        li.nav-route.icon-route.wishlist
+          @include icon-route()
+        li.nav-route.icon-route.bag
+          @include icon-route()
+
+  // with ID : make it uniqu to be much recognizable
+  #shop-route
+    &:hover
+      main.shop-list-wrapper
+        display: block
+
+// media query:::
+@media screen and ( max-width:  900px)
+  nav.default-header-nav
+    display: none

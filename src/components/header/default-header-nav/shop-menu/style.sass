@@ -1,0 +1,31 @@
+// importing:::
+@import '../../../../sass-utl/_mixins'
+@import '../../../../sass-utl/_colors'
+@import '../../../../sass-utl/_animation'
+
+// styling:::
+main.shop-list-wrapper
+  display: none
+  position: absolute
+  top: 60px
+  left: 0
+  border: 1px solid $main_gray
+  right: 0
+  min-height: 80vh
+  background: $main_white
+  border-radius: 0.7rem
+  border-top-left-radius: 0
+  border-top-right-radius: 0
+  padding: 1rem
+  animation: slide-to-top ease-in-out 0.3s
+  span.to-show
+    display: block
+    position: absolute
+    top: -22px
+    left: 0
+    right: 0
+    height: 3rem
+    opacity: 0
+  section.shop-routes
+    display: flex
+    flex-wrap: wrap

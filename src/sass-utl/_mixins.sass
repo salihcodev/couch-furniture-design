@@ -1,0 +1,46 @@
+@import '../sass-utl/_colors'
+
+@mixin progress-bar-after-element ()
+  content: ''
+  display: block
+  height: 1px
+  position: absolute
+  background: $main_dark
+  transition: $main_transition
+  margin: auto
+  bottom: 0
+  left: 0
+  width: 0
+
+@mixin no-list-style()
+  list-style: none
+  margin: 0
+  padding: 0
+
+@mixin icon-route()
+  position: relative
+  span.count
+    color: $main_white
+    position: absolute
+    font-size: 12px
+    background: $alt_cl-3
+    top: 2px
+    right: -13px
+    border-radius: 50%
+    width: 25px
+    height: 25px
+    justify-content: center
+    align-items: center
+    display: flex
+    border: 2px solid $main_white
+
+@mixin normal-route()
+  margin: 0.5rem
+  a.route-link
+    font-weight: bold
+    color: $alt_cl-1
+    font-size: 13px
+    text-transform: uppercase
+  &:hover
+    a.route-link
+      color: $alt_cl-4
