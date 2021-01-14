@@ -3,7 +3,7 @@
 const shopRoutes = [
   {
     route: 'living room',
-    path: '/living-room',
+    path: '/shop/living-room',
     nested: [
       { subRoute: 'Coffee Tables', link: '#' },
       { subRoute: 'Lounge Chairs', link: '#' },
@@ -16,7 +16,7 @@ const shopRoutes = [
   },
   {
     route: 'entryway',
-    path: '/entryway',
+    path: '/shop/entryway',
     nested: [
       { subRoute: 'Benches', link: '#' },
       { subRoute: 'Consoles', link: '#' },
@@ -25,7 +25,7 @@ const shopRoutes = [
   },
   {
     route: 'dining room',
-    path: '/dining-room',
+    path: '/shop/dining-room',
     nested: [
       { subRoute: 'Bar Stools', link: '#' },
       { subRoute: 'Dining Chairs', link: '#' },
@@ -35,7 +35,7 @@ const shopRoutes = [
   },
   {
     route: 'office',
-    path: '/office',
+    path: '/shop/office',
     nested: [
       { subRoute: 'Bookcases', link: '#' },
       { subRoute: 'Chairs', link: '#' },
@@ -45,7 +45,7 @@ const shopRoutes = [
   },
   {
     route: 'bedroom',
-    path: '/bedroom',
+    path: '/shop/bedroom',
     nested: [
       { subRoute: 'Beds', link: '#' },
       { subRoute: 'Dressers', link: '#' },
@@ -55,7 +55,7 @@ const shopRoutes = [
   },
   {
     route: 'decor',
-    path: '/decor',
+    path: '/shop/decor',
     nested: [
       { subRoute: 'Rugs', link: '#' },
       { subRoute: 'Lighting', link: '#' },
@@ -65,7 +65,7 @@ const shopRoutes = [
   },
   {
     route: 'outdoor',
-    path: '/outdoor',
+    path: '/shop/outdoor',
     nested: [
       { subRoute: 'Outdoor Chairs', link: '#' },
       { subRoute: 'Outdoor Dining', link: '#' },
@@ -75,12 +75,12 @@ const shopRoutes = [
   },
   {
     route: 'recreation',
-    path: '/recreation',
+    path: '/shop/recreation',
     nested: [{ subRoute: 'Game Tables', link: '#' }],
   },
   {
     route: 'more',
-    path: '/more',
+    path: '/shop/more',
     nested: [
       { subRoute: 'Couch Black', link: '#' },
       { subRoute: 'Couch Exclusives', link: '#' },

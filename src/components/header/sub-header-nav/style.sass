@@ -1,0 +1,41 @@
+// importing:::
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_transitions'
+
+// styling:::
+nav.sub-navbar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0.5rem
+  height: 3rem
+  .wing
+    &.left-wing
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      flex-grow: 1
+      a.trade-contract
+        font-weight: bold
+        color: $alt_cl-3
+        font-size: 13px
+        text-transform: uppercase
+        letter-spacing: 1px
+        height: 2rem
+        text-align: center
+        display: flex
+        align-items: center
+
+    &.right-wing
+      flex-grow: 1
+      .signing
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        a
+          margin: 0 0.4rem
+
+// media query:::
+@media screen and ( max-width:  900px)
+  nav.sub-navbar
+    display: none !important

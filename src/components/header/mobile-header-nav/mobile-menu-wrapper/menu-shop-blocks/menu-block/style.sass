@@ -1,0 +1,32 @@
+// importing:::
+@import '../../../../../../sass-utl/_colors'
+@import '../../../../../../sass-utl/_mixins'
+@import '../../../../../../sass-utl/_transitions'
+
+// styling:::
+.single-menu-block
+  margin-bottom: 1rem
+  button.category-title
+    width: 100%
+    text-align-last: left
+    font-size: 14px
+    cursor: pointer
+    border: 1px solid $alt_gray
+    background: none
+    padding: 1rem 0.5rem
+    border-radius: 0.7rem
+    text-transform: uppercase
+    color: $alt_gray-1
+    &:focus
+      color: $alt_cl-3
+  ul.shop-list
+    transition: $fast_transition
+    width: 100%
+    overflow: hidden
+    @include no-list-style()
+    li
+      a
+        font-size: 13px
+        color: $alt_cl-1
+        &:hover
+          color: $alt_cl-4

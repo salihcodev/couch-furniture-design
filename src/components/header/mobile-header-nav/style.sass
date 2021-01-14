@@ -1,0 +1,50 @@
+// importing:::
+@import '../../../sass-utl/_mixins'
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_animation'
+
+// styling:::
+nav.mobile-header-nav
+  position: relative
+  align-items: center
+  justify-content: space-between
+  height: 4rem
+  padding: 0.5rem
+  display: none
+  button.sm-menu-toggler
+    background: none
+    width: 2.3rem
+    height: 2rem
+    padding: 0px 4px
+    border-radius: 0.2rem
+    border: none
+    margin-top: -0.4rem
+    span.bar
+      display: block
+      height: 2px
+      background: $alt_cl-1
+      width: 100%
+      width: 100%
+      margin: 7px 0
+  .nav-logo
+  ul.routes-list
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    @include no-list-style
+    li.nav-route.icon-route
+      margin: 0.5rem
+      a.route-link
+        font-weight: bold
+        color: $alt_cl-1
+        font-size: 1.5rem
+        text-transform: uppercase
+    li.nav-route.icon-route.bag
+      @include icon-route()
+    li.nav-route.icon-route.wishlist
+      @include icon-route()
+
+// media query:::
+@media screen and ( max-width: 900px)
+  nav.mobile-header-nav
+    display: flex
