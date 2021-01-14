@@ -1,0 +1,33 @@
+// importing:::
+@import '../../../sass-utl/_colors'
+
+// styling:::
+section.sub-footer
+  border-top: 1px solid $alt_gray
+  margin-top: 3rem
+  padding: 1rem
+  padding-bottom: 2rem
+
+  .rights-and-language
+    p.rights-phrase
+      color: $alt_cl-1
+      font-size: 14px
+      a
+        font-weight: bold
+        color: $alt_cl-1
+        font-size: 13px
+        text-transform: uppercase
+        &:hover
+          color: $alt_cl-4
+    .switch-language
+      select
+        background: $alt_white
+        border: 1px solid #ddd
+        border-radius: 0.4rem
+        padding: 0.3rem 0
+        cursor: pointer
+        // appearance: none
+  .company-brand
+    display: flex
+    align-items: center
+    justify-content: flex-end
