@@ -1,5 +1,3 @@
-// route preview images:
-
 const shopRoutes = [
   {
     route: 'living room',

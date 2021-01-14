@@ -1,0 +1,22 @@
+// importing:::
+@import '../../../../../sass-utl/_colors'
+@import '../../../../../sass-utl/_mixins'
+
+// styling:::
+.links-block
+  margin-bottom: 1rem
+  h6.block-title
+    color: $alt_gray-1
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: bold
+    &:hover
+      color: $alt_cl-3
+  ul.block-sub-links
+    @include no-list-style()
+    li
+      a.sub-link
+        color: $alt_cl-1
+        font-size: 14px
+        &:hover
+          color: $alt_cl-4

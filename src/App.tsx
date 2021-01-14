@@ -8,6 +8,7 @@ import Error404Page from './views/error404/Error404.page';
 
 // COMPONENTS:
 import Header from './components/header/Header.comp';
+import Footer from './components/footer/Footer.comp';
 
 // ROOT COMPONENT:=>
 const CouchFurnitureDesignApp = () => {
@@ -18,6 +19,7 @@ const CouchFurnitureDesignApp = () => {
         <Route exact path="/" component={HomePage} />
         <Route path="*" component={Error404Page} />
       </Switch>
+      <Footer />
     </>
   );
 };

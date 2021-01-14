@@ -12,7 +12,7 @@ import DefaultHeaderNav from './default-header-nav/DefaultHeaderNav.comp';
 // COMPONENT:=>
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header-wrapper">
       {/* <Container fluid> */}
       {/* sub nav */}
       <SubHeaderNav />

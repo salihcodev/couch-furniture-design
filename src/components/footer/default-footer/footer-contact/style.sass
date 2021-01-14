@@ -1,0 +1,66 @@
+// importing:::
+@import '../../../../sass-utl/_colors'
+@import '../../../../sass-utl/_mixins'
+
+// styling:::
+
+section.contact-and-social
+  h5.contact-title
+    color: $alt_gray-1
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: bold
+    &:hover
+      color: $alt_cl-3
+  p.contact-desc
+    color: $alt_cl-1
+    font-size: 14px
+    padding: 1rem 0
+  .quick-mail
+    form
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid $alt_gray
+      margin: 1rem 0
+      input
+        flex-grow: 1
+        padding: 0.5rem
+        border: none
+        caret-color: $alt_cl-3
+        &::placeholder
+          color: $alt_gray-1
+
+      button
+        padding: 0.5rem
+        min-width: 3rem
+        background: none
+        border: none
+        font-size: 20px
+        color: $alt_cl-1
+        span
+          display: block
+          width: 100%
+          height: 100%
+  ul.social-links
+    display: flex
+    @include no-list-style()
+    li
+      width: 28px
+      height: 28px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      margin: 0.1rem
+      background: $alt_gray
+      &:first-child
+        margin-left: 0
+      a
+        color: $alt_cl-1
+        font-size: 16px
+        &:hover
+          color: $alt_cl-4
+
+@media screen and ( max-width:  769px)
+  section.contact-and-social
+    margin-top: 3rem
