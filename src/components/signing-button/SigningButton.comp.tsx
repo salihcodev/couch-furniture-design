@@ -31,6 +31,7 @@ const SigningButton: React.FC<ButtonProps> = ({
     color: clr,
     borderColor: borderClr,
     borderWidth: borderW,
+    justifyContent: logIn ? `space-around` : 'center',
   };
 
   return (

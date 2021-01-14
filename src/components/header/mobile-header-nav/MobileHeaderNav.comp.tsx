@@ -4,20 +4,28 @@ import './style.sass';
 // UTILITIES:
 import { NavLink } from 'react-router-dom';
 import { IoBagOutline, IoHeartOutline } from 'react-icons/io5';
+import { connect } from 'react-redux';
+import { toggleMenuVisibility } from '../../../redux/mobile-menu/mobileMenu.action';
 
 // IMPORT COMPONENTS:
 import { ReactComponent as Logo } from '../../../assets/couchFurnitureDesign.logo-min.svg';
 import MobileMenuWrapper from './mobile-menu-wrapper/MobileMenuWrapper.comp';
 
 // INTERFACE:
-interface Props {}
+interface Props {
+  toggleMenuVisibility: () => any;
+  menuHidden: boolean;
+}
 
 // COMPONENT:=>
-const MobileHeaderNav: React.FC<Props> = () => {
+const MobileHeaderNav: React.FC<Props> = ({
+  toggleMenuVisibility,
+  menuHidden,
+}) => {
   return (
     <nav className="mobile-header-nav">
       {/* toggler */}
-      <button className="sm-menu-toggler" onClick={() => console.log('hi')}>
+      <button className="sm-menu-toggler" onClick={toggleMenuVisibility}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
@@ -49,9 +57,17 @@ const MobileHeaderNav: React.FC<Props> = () => {
           <span className="count">5</span>
         </li>
       </ul>
-      <MobileMenuWrapper />
+      {menuHidden ? null : <MobileMenuWrapper />}
     </nav>
   );
 };
 
-export default MobileHeaderNav;
+const mapDispatchToProps = (dispatch: any) => ({
+  toggleMenuVisibility: () => dispatch(toggleMenuVisibility()),
+});
+
+const mapStateToProps = ({ mobileMenu: { menuHidden } }: any) => ({
+  menuHidden: menuHidden,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(MobileHeaderNav);
