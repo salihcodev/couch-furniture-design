@@ -7,6 +7,7 @@ import './style.sass';
 import Hero from '../../components/hero/Hero.comp';
 import heroHome from '../../assets/hero/home-hero.jpg';
 import Services from '../../components/services/Services.comp';
+import Categories from '../../components/categories/Categories.comp';
 
 // INTERFACE:
 
@@ -32,6 +33,8 @@ const HomePage: React.FC<Props> = () => {
 
       {/* services */}
       <Services />
+      {/* categories */}
+      <Categories />
     </div>
   );
 };

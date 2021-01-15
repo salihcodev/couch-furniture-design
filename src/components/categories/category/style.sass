@@ -1,0 +1,31 @@
+// importing:::
+@import '../../../sass-utl/_transitions'
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_fonts'
+@import '../../../sass-utl/_mixins'
+
+// styling:::
+.category
+  min-height: 40rem
+  margin-bottom: 2rem
+  display: flex
+  align-items: flex-end
+  text-align: center
+  padding: 1rem
+  padding-bottom: 3rem
+  border-radius: 1rem
+  transition: $fast_transition
+  &:hover
+    transform: scale(0.98)
+  h2.cat-heading
+    font-family: $uni_font
+    font-weight: bold
+    text-transform: uppercase
+    color: $main_white
+  p.cat-desc
+    margin: 1rem 0
+    color: $main_white
+  a.visit-cat
+    text-decoration: underline !important
+    color: $main_white
+    text-transform: uppercase
