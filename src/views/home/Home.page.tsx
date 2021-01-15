@@ -6,6 +6,7 @@ import './style.sass';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 import heroHome from '../../assets/hero/home-hero.jpg';
+import Services from '../../components/services/Services.comp';
 
 // INTERFACE:
 
@@ -28,6 +29,9 @@ const HomePage: React.FC<Props> = () => {
         // btn1Clr=""
         // btn1Bkg=""
       />
+
+      {/* services */}
+      <Services />
     </div>
   );
 };
