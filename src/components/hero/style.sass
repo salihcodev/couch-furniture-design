@@ -1,0 +1,37 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+
+// styling:::
+section.hero-wrapper
+  display: flex
+  align-items: center
+
+  .text-wrapper
+    h2.hero-title
+      // font-weight: bold
+      font-family: $uni_font
+      font-size: 4rem
+      color: $main_white
+    p.hero-desc
+      color: $alt_cl-1
+      margin-left: 0.5rem
+      color: $main_white
+      font-size: 18px
+      font-weight: bold
+  .buttons-wrapper
+    a.btn-1
+      border: 1px solid $alt_gray
+      width: 10rem
+      height: 3rem
+      font-weight: bold
+      display: flex
+      align-items: center
+      justify-content: center
+      color: $main_white
+      border-radius: 0.7rem
+      transition: $fast_transition
+      &:hover
+        color: $alt_dark
+        background: $main_white
