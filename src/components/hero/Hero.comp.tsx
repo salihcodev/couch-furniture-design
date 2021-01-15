@@ -11,10 +11,11 @@ interface HeroProps {
   mini?: boolean;
   heroTitle: string;
   heroTitleClr?: string;
-  heroDesc: string;
+  heroDesc: any;
   heroDescClr?: string;
-  btn1Text: string;
-  btn1Path: string;
+  heroDescWeight?: any;
+  btn1Text?: string;
+  btn1Path?: any;
   btn1Clr?: string;
   btn1Bkg?: string;
 }
@@ -27,6 +28,7 @@ const Hero: React.FC<HeroProps> = ({
   heroTitleClr,
   heroDesc,
   heroDescClr,
+  heroDescWeight,
   btn1Text,
   btn1Path,
   btn1Clr,
@@ -41,22 +43,30 @@ const Hero: React.FC<HeroProps> = ({
       <Container>
         <div className="flex-shield">
           <div className="text-wrapper">
-            <h2 className="h1 hero-title" style={{ color: heroTitleClr }}>
+            <h2
+              className="h1 hero-title"
+              style={{ color: heroTitleClr, fontSize: mini ? `2rem` : `4rem` }}
+            >
               {heroTitle}
             </h2>
-            <p className="hero-desc" style={{ color: heroDescClr }}>
+            <p
+              className="hero-desc"
+              style={{ color: heroDescClr, fontWeight: heroDescWeight }}
+            >
               {heroDesc}
             </p>
           </div>
-          <div className="buttons-wrapper">
-            <NavLink
-              to={btn1Path}
-              className="btn-1"
-              style={{ color: btn1Clr, background: btn1Bkg }}
-            >
-              {btn1Text}
-            </NavLink>
-          </div>
+          {!mini && (
+            <div className="buttons-wrapper">
+              <NavLink
+                to={btn1Path}
+                className="btn-1"
+                style={{ color: btn1Clr, background: btn1Bkg }}
+              >
+                {btn1Text}
+              </NavLink>
+            </div>
+          )}
         </div>
       </Container>
     </section>

@@ -22,13 +22,9 @@ const HomePage: React.FC<Props> = () => {
         cover={heroHome}
         mini={false}
         heroTitle="We are your next dream room"
-        // heroTitleClr=""
         heroDesc="From concept to reality, browse our latest designs now available."
-        // heroDescClr=""
         btn1Text="Shop now!"
         btn1Path="/shop"
-        // btn1Clr=""
-        // btn1Bkg=""
       />
 
       {/* services */}
