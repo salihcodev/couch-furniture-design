@@ -1,0 +1,26 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_mixins'
+
+// styling:::
+section.services-wrapper
+  text-align: center
+  h3.services-title
+    margin: 7rem 0 3rem
+    text-transform: uppercase
+    font-weight: bold
+    color: $alt_dark
+  ul.services-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    @include no-list-style()
+    li
+      width: 12rem
+      span.icon
+        font-size: 2rem
+        color: $alt_cl-1
+      p.description
+        font-size: 14px
