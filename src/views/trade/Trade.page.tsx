@@ -2,7 +2,6 @@
 import './style.sass';
 
 // UTILITIES:
-import { useLocation } from 'react-router-dom';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 
@@ -19,8 +18,6 @@ const Trade: React.FC<Props> = () => {
         cover={''}
         mini={true}
         heroTitle="Let's start businesses with each other"
-        heroDesc={`/home${useLocation().pathname}`}
-        heroDescWeight="normal"
       />
     </div>
   );

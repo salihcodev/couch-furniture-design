@@ -2,7 +2,6 @@
 import './style.sass';
 
 // UTILITIES:
-import { useLocation } from 'react-router-dom';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 
@@ -19,8 +18,6 @@ const Signup: React.FC<Props> = () => {
         cover={''}
         mini={true}
         heroTitle="We are happy for joining you our community :)"
-        heroDesc={`/home${useLocation().pathname}`}
-        heroDescWeight="normal"
       />
     </div>
   );

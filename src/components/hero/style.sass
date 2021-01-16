@@ -2,23 +2,36 @@
 @import '../../sass-utl/_transitions'
 @import '../../sass-utl/_colors'
 @import '../../sass-utl/_fonts'
+@import '../../sass-utl/_animation'
 
 // styling:::
 section.hero-wrapper
   display: flex
   align-items: center
+  animation: gh ease-in-out 0.5s
+  position: relative
 
   .text-wrapper
     h2.hero-title
       font-family: $uni_font
       color: $main_white
     p.hero-desc
-      color: $alt_cl-1
-      margin-left: 0.5rem
-      color: $main_white
-      font-size: 18px
-      font-weight: bold
+      &.mini
+        display: flex
+        a
+          margin-right: 0.5rem
+        span
+          margin-top: 0.1rem
+        a,span
+          color: $alt_cl-2
+      &.default
+        color: $alt_cl-1
+        margin-left: 0.5rem
+        color: $main_white
+        font-size: 18px
+        font-weight: bold
   .buttons-wrapper
+    margin-top: 4rem
     a.btn-1
       border: 1px solid $alt_gray
       width: 10rem

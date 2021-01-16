@@ -15,13 +15,7 @@ interface Props {}
 const Contact: React.FC<Props> = () => {
   return (
     <div className="contact-page">
-      <Hero
-        cover={''}
-        mini={true}
-        heroTitle="Keep in touch"
-        heroDesc={`/home${useLocation().pathname}`}
-        heroDescWeight="normal"
-      />
+      <Hero cover={''} mini={true} heroTitle="Keep in touch" />
     </div>
   );
 };

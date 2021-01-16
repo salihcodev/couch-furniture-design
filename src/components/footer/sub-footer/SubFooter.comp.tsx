@@ -26,7 +26,7 @@ const SubFooter: React.FC<Props> = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  couch
+                  couch inc.
                 </a>
                 {'  '}
                 2020 - {new Date().getFullYear()}

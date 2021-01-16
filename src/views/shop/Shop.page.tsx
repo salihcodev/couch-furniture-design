@@ -2,7 +2,6 @@
 import './style.sass';
 
 // UTILITIES:
-import { useLocation } from 'react-router-dom';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 
@@ -18,9 +17,7 @@ const Shop: React.FC<Props> = () => {
       <Hero
         cover={''}
         mini={true}
-        heroTitle="Proudly, To introduce our products."
-        heroDesc={`/home${useLocation().pathname}`}
-        heroDescWeight="normal"
+        heroTitle="Proud to introduce our products."
       />
     </div>
   );

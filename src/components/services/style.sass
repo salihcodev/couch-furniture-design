@@ -19,8 +19,16 @@ section.services-wrapper
     @include no-list-style()
     li
       width: 12rem
+      pading: 1rem
+      margin: 0.5rem
+      &:hover
+        span
+          transform: scale(1.1)
       span.icon
-        font-size: 2rem
         color: $alt_cl-1
+        margin-bottom: 1rem
+        transition: $fast_transition
+        display: block
+        font-size: 2rem
       p.description
         font-size: 14px

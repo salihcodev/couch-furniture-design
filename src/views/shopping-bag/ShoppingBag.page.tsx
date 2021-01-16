@@ -2,7 +2,6 @@
 import './style.sass';
 
 // UTILITIES:
-import { useLocation } from 'react-router-dom';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 
@@ -15,13 +14,7 @@ interface Props {}
 const ShoppingBag: React.FC<Props> = () => {
   return (
     <div className="shopping-bag-page">
-      <Hero
-        cover={''}
-        mini={true}
-        heroTitle="Your shopping bag"
-        heroDesc={`/home${useLocation().pathname}`}
-        heroDescWeight="normal"
-      />
+      <Hero cover={''} mini={true} heroTitle="Your shopping bag" />
     </div>
   );
 };
