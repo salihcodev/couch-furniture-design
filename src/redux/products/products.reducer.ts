@@ -1,9 +1,9 @@
 import { categories, limitedAndNew } from '../../api-mocks/API.data';
 
 const INITIAL_STATE = {
-  all: categories,
-  limited: limitedAndNew,
-  new: limitedAndNew,
+  categories: categories,
+  limitedProducts: limitedAndNew,
+  newProducts: limitedAndNew,
 };
 
 const productsReducer = (state = INITIAL_STATE, action: any) => {
