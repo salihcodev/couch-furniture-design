@@ -4,7 +4,7 @@ import dining from '../assets/categories/dining.jpg';
 import bedroom from '../assets/categories/bedroom.jpg';
 import study from '../assets/categories/study.jpg';
 
-const categoriesList = [
+const categories = [
   {
     img: living,
     heading: 'living room',
@@ -35,4 +35,4 @@ const categoriesList = [
   },
 ];
 
-export default categoriesList;
+export default categories;

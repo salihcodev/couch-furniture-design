@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   // setup a style to hero container:
   const heroStyle = {
-    height: mini ? `25vh` : `100vh`,
+    minHeight: mini ? `25vh` : `100vh`,
     background: `linear-gradient(45deg, #0005,#5e7a9199 ), url(${cover}) center/cover`,
   };
 

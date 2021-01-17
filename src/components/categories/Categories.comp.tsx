@@ -3,7 +3,7 @@ import './style.sass';
 
 // UTILITIES:
 import { Container, Row } from 'react-bootstrap';
-import categoriesList from '../../components-data/categoriesList';
+import categoriesList from '../../components-data/categories';
 
 // IMPORT COMPONENTS:
 import Category from './category/Category.comp';
