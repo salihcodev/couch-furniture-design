@@ -1,13 +1,13 @@
 // OFFICE:
 // independent item:
-import officeBase1 from './assets/office/bas-1-min.jpg';
-import officeBase2 from './assets/office/bas-2-min.jpg';
-import officeBase3 from './assets/office/bas-3-min.jpg';
-import officeBase4 from './assets/office/bas-4-min.jpg';
-import officeBase5 from './assets/office/bas-5-min.jpg';
-import officeBase6 from './assets/office/bas-6-min.jpg';
-import officeBase7 from './assets/office/bas-7-min.jpg';
-import officeBase8 from './assets/office/bas-8-min.jpg';
+import officeBase1 from './assets/office/base-1-min.jpg';
+import officeBase2 from './assets/office/base-2-min.jpg';
+import officeBase3 from './assets/office/base-3-min.jpg';
+import officeBase4 from './assets/office/base-4-min.jpg';
+import officeBase5 from './assets/office/base-5-min.jpg';
+import officeBase6 from './assets/office/base-6-min.jpg';
+import officeBase7 from './assets/office/base-7-min.jpg';
+import officeBase8 from './assets/office/base-8-min.jpg';
 
 // to review every item:
 import officeToShow1 from './assets/office/toShow-1-min.jpg';
@@ -24,14 +24,14 @@ import officeToShow10 from './assets/office/toShow-10-min.jpg';
 // LIVING ROOM
 // independent item:
 
-import livingBase1 from './assets/living/bas-1-min.jpg';
-import livingBase2 from './assets/living/bas-2-min.jpg';
-import livingBase3 from './assets/living/bas-3-min.jpg';
-import livingBase4 from './assets/living/bas-4-min.jpg';
-import livingBase5 from './assets/living/bas-5-min.jpg';
-import livingBase6 from './assets/living/bas-6-min.jpg';
-import livingBase7 from './assets/living/bas-7-min.jpg';
-import livingBase8 from './assets/living/bas-8-min.jpg';
+import livingBase1 from './assets/living/base-1-min.jpg';
+import livingBase2 from './assets/living/base-2-min.jpg';
+import livingBase3 from './assets/living/base-3-min.jpg';
+import livingBase4 from './assets/living/base-4-min.jpg';
+import livingBase5 from './assets/living/base-5-min.jpg';
+import livingBase6 from './assets/living/base-6-min.jpg';
+import livingBase7 from './assets/living/base-7-min.jpg';
+import livingBase8 from './assets/living/base-8-min.jpg';
 // to review every item:
 import livingToShow1 from './assets/living/toShow-1-min.jpg';
 import livingToShow2 from './assets/living/toShow-2-min.jpg';
@@ -46,14 +46,14 @@ import livingToShow10 from './assets/living/toShow-10-min.jpg';
 
 // ENTRYWAY
 // independent item:
-import entrywayBase1 from './assets/entryway/bas-1-min.jpg';
-import entrywayBase2 from './assets/entryway/bas-2-min.jpg';
-import entrywayBase3 from './assets/entryway/bas-3-min.jpg';
-import entrywayBase4 from './assets/entryway/bas-4-min.jpg';
-import entrywayBase5 from './assets/entryway/bas-5-min.jpg';
-import entrywayBase6 from './assets/entryway/bas-6-min.jpg';
-import entrywayBase7 from './assets/entryway/bas-7-min.jpg';
-import entrywayBase8 from './assets/entryway/bas-8-min.jpg';
+import entrywayBase1 from './assets/entryway/base-1-min.jpg';
+import entrywayBase2 from './assets/entryway/base-2-min.jpg';
+import entrywayBase3 from './assets/entryway/base-3-min.jpg';
+import entrywayBase4 from './assets/entryway/base-4-min.jpg';
+import entrywayBase5 from './assets/entryway/base-5-min.jpg';
+import entrywayBase6 from './assets/entryway/base-6-min.jpg';
+import entrywayBase7 from './assets/entryway/base-7-min.jpg';
+import entrywayBase8 from './assets/entryway/base-8-min.jpg';
 // to review every item:
 import entrywayToShow1 from './assets/entryway/toShow-1-min.jpg';
 import entrywayToShow2 from './assets/entryway/toShow-2-min.jpg';
@@ -68,14 +68,14 @@ import entrywayToShow10 from './assets/entryway/toShow-10-min.jpg';
 
 // BED ROOM
 // independent item:
-import bedBase1 from './assets/bed/bas-1-min.jpg';
-import bedBase2 from './assets/bed/bas-2-min.jpg';
-import bedBase3 from './assets/bed/bas-3-min.jpg';
-import bedBase4 from './assets/bed/bas-4-min.jpg';
-import bedBase5 from './assets/bed/bas-5-min.jpg';
-import bedBase6 from './assets/bed/bas-6-min.jpg';
-import bedBase7 from './assets/bed/bas-7-min.jpg';
-import bedBase8 from './assets/bed/bas-8-min.jpg';
+import bedBase1 from './assets/bed/base-1-min.jpg';
+import bedBase2 from './assets/bed/base-2-min.jpg';
+import bedBase3 from './assets/bed/base-3-min.jpg';
+import bedBase4 from './assets/bed/base-4-min.jpg';
+import bedBase5 from './assets/bed/base-5-min.jpg';
+import bedBase6 from './assets/bed/base-6-min.jpg';
+import bedBase7 from './assets/bed/base-7-min.jpg';
+import bedBase8 from './assets/bed/base-8-min.jpg';
 // to review every item:
 import bedToShow1 from './assets/bed/toShow-1-min.jpg';
 import bedToShow2 from './assets/bed/toShow-2-min.jpg';
@@ -90,14 +90,14 @@ import bedToShow10 from './assets/bed/toShow-10-min.jpg';
 
 // DECOR
 // independent item:
-import decorBase1 from './assets/decor/bas-1-min.jpg';
-import decorBase2 from './assets/decor/bas-2-min.jpg';
-import decorBase3 from './assets/decor/bas-3-min.jpg';
-import decorBase4 from './assets/decor/bas-4-min.jpg';
-import decorBase5 from './assets/decor/bas-5-min.jpg';
-import decorBase6 from './assets/decor/bas-6-min.jpg';
-import decorBase7 from './assets/decor/bas-7-min.jpg';
-import decorBase8 from './assets/decor/bas-8-min.jpg';
+import decorBase1 from './assets/decor/base-1-min.jpg';
+import decorBase2 from './assets/decor/base-2-min.jpg';
+import decorBase3 from './assets/decor/base-3-min.jpg';
+import decorBase4 from './assets/decor/base-4-min.jpg';
+import decorBase5 from './assets/decor/base-5-min.jpg';
+import decorBase6 from './assets/decor/base-6-min.jpg';
+import decorBase7 from './assets/decor/base-7-min.jpg';
+import decorBase8 from './assets/decor/base-8-min.jpg';
 // to review every item:
 import decorToShow1 from './assets/decor/toShow-1-min.jpg';
 import decorToShow2 from './assets/decor/toShow-2-min.jpg';
