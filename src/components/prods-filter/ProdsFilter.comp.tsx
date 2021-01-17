@@ -12,7 +12,7 @@ const ProdsFilter: React.FC<ProdsFilterProps> = () => {
   return (
     <section className="prods-filter">
       <div className="filter-header">
-        <h4 className="filter-title">Filter</h4>
+        <h5 className="filter-title">Filter</h5>
         <span className="filter icon">
           <BiFilterAlt />
         </span>
