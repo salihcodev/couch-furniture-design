@@ -29,12 +29,12 @@ const Shop: React.FC<ShopPageProps> = () => {
           </Col>
 
           {/* shop prods wrapper */}
-          <Col sm={12} md={8} xl={8}>
+          <Col sm={12} md={9} xl={8}>
             <ProdsWrapper />
           </Col>
 
           {/* right hans side column, show most hit prod & display ads. */}
-          <Col sm={12} md={4} xl={2}>
+          <Col sm={12} md={3} xl={2}>
             <aside className="most-hit-and-ads">
               <MostHitProd />
               {/* ads for ex: */}

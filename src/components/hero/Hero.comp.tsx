@@ -12,6 +12,7 @@ interface HeroProps {
   mini?: boolean;
   heroTitle: string;
   heroTitleClr?: string;
+  titleUni?: string;
   heroDesc?: any;
   heroDescClr?: string;
   heroDescWeight?: any;
@@ -27,6 +28,7 @@ const Hero: React.FC<HeroProps> = ({
   mini,
   heroTitle,
   heroTitleClr,
+  titleUni,
   heroDesc,
   heroDescClr,
   heroDescWeight,
@@ -62,6 +64,7 @@ const Hero: React.FC<HeroProps> = ({
               style={{ color: heroTitleClr, fontSize: mini ? `2rem` : `4rem` }}
             >
               {heroTitle}
+              <span className="uni-txt">{titleUni}</span>
             </h2>
             {!mini && (
               <p
