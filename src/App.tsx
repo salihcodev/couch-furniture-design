@@ -15,6 +15,7 @@ import Shop from './views/shop/Shop.page';
 import New from './views/new/New.page';
 import ShoppingBag from './views/shopping-bag/ShoppingBag.page';
 import WishList from './views/wishlist/WishList.page';
+import SingleProdViewer from './views/single-prod/SingleProd.page';
 
 // COMPONENTS:
 import Header from './components/header/Header.comp';
@@ -34,6 +35,7 @@ const CouchFurnitureDesignApp = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/company" component={Company} />
         <Route exact path="/shop" component={Shop} />
+        <Route exact path="/shop/:id" component={SingleProdViewer} />
         <Route exact path="/new" component={New} />
         <Route exact path="/bag" component={ShoppingBag} />
         <Route exact path="/wishlist" component={WishList} />

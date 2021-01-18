@@ -4,14 +4,17 @@ import './style.sass';
 // UTILITIES:
 import { Link } from 'react-router-dom';
 import { BsHeart } from 'react-icons/bs';
+import { connect } from 'react-redux';
+import { redirectToSingleProd } from '../../redux/products/products.action';
 
 // INTERFACE:
 interface ProdCardProps {
   product: any;
+  dispatch: any;
 }
 
 // COMPONENT:=>
-const ProdCard: React.FC<ProdCardProps> = ({ product }) => {
+const ProdCard: React.FC<ProdCardProps> = ({ product, dispatch }) => {
   const { slug, name, imgUrl, featured, price, availableColors } = product;
 
   return (
@@ -24,8 +27,9 @@ const ProdCard: React.FC<ProdCardProps> = ({ product }) => {
       </div>
       <Link
         className="card-wrapper"
-        to={slug}
+        to={`shop/${slug}`}
         style={{ background: `url(${imgUrl}) center/contain no-repeat` }}
+        onClick={() => dispatch(redirectToSingleProd(slug))}
       >
         <div className="prod-card-footer">
           <strong className="price">{price}</strong>
@@ -41,4 +45,4 @@ const ProdCard: React.FC<ProdCardProps> = ({ product }) => {
   );
 };
 
-export default ProdCard;
+export default connect()(ProdCard);

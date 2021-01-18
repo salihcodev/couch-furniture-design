@@ -14,20 +14,11 @@ interface ProdsCollectionsProps {
 
 // COMPONENT:=>
 const ProdsCollections: React.FC<ProdsCollectionsProps> = ({ categories }) => {
-  // for (const cat in categories) {
-  //   console.log(cat, ':', categories[cat]);
-  // }
-
   // extract every single collection:
-  const collections = [];
-
-  for (const cat in categories) {
-    collections.push(categories[cat]);
-  }
 
   return (
     <main className="prods-collections">
-      {collections.map(({ ...collection }: any) => (
+      {categories.map(({ ...collection }: any) => (
         <SingleCollection key={collection.id} {...collection} />
       ))}
     </main>
