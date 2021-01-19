@@ -67,6 +67,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = ({ newArrivals }) => {
   );
 };
 
+
 const mapStateToProps = ({ products: { itemsToTest } }: any) => ({
   newArrivals: itemsToTest,
 });
