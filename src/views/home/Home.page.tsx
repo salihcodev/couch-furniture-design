@@ -8,6 +8,7 @@ import Hero from '../../components/hero/Hero.comp';
 import heroHome from '../../assets/hero/home-hero.jpg';
 import Services from '../../components/services/Services.comp';
 import Categories from '../../components/categories/Categories.comp';
+import NewArrivals from '../../components/new-arrivals/ProdDetails.comp';
 
 // INTERFACE:
 
@@ -26,6 +27,9 @@ const HomePage: React.FC<Props> = () => {
         btn1Text="Shop now!"
         btn1Path="/shop"
       />
+
+      {/* new arrivals */}
+      <NewArrivals />
 
       {/* services */}
       <Services />
