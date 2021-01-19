@@ -147,7 +147,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -191,7 +191,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -235,7 +235,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -279,7 +279,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -323,7 +323,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -367,7 +367,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -411,7 +411,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -455,7 +455,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           officeToShow1,
           officeToShow2,
@@ -506,7 +506,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -550,7 +550,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -594,7 +594,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -638,7 +638,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -682,7 +682,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -726,7 +726,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -770,7 +770,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -814,7 +814,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           livingToShow1,
           livingToShow2,
@@ -865,7 +865,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -909,7 +909,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -953,7 +953,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -997,7 +997,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -1041,7 +1041,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -1085,7 +1085,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -1129,7 +1129,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -1173,7 +1173,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           entrywayToShow1,
           entrywayToShow2,
@@ -1224,7 +1224,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1268,7 +1268,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1312,7 +1312,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1356,7 +1356,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1400,7 +1400,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1444,7 +1444,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1488,7 +1488,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1532,7 +1532,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           bedToShow1,
           bedToShow2,
@@ -1583,7 +1583,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1627,7 +1627,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1671,7 +1671,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1715,7 +1715,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1759,7 +1759,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1803,7 +1803,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1847,7 +1847,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1891,7 +1891,7 @@ const categories = [
           '51 LBS',
         ],
         returnAndExchange: true,
-        freeShipping: false,
+        freeShipping: true,
         images: [
           decorToShow1,
           decorToShow2,
@@ -1935,7 +1935,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       officeToShow1,
       officeToShow2,
@@ -1973,7 +1973,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       officeToShow1,
       officeToShow2,
@@ -2011,7 +2011,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       livingToShow1,
       livingToShow2,
@@ -2049,7 +2049,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       livingToShow1,
       livingToShow2,
@@ -2087,7 +2087,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       livingToShow1,
       livingToShow2,
@@ -2125,7 +2125,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       livingToShow1,
       livingToShow2,
@@ -2163,7 +2163,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       entrywayToShow1,
       entrywayToShow2,
@@ -2201,7 +2201,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       entrywayToShow1,
       entrywayToShow2,
@@ -2239,7 +2239,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       bedToShow1,
       bedToShow2,
@@ -2277,7 +2277,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       bedToShow1,
       bedToShow2,
@@ -2315,7 +2315,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       decorToShow1,
       decorToShow2,
@@ -2353,7 +2353,7 @@ const limitedAndNew = [
       '51 LBS',
     ],
     returnAndExchange: true,
-    freeShipping: false,
+    freeShipping: true,
     images: [
       decorToShow1,
       decorToShow2,
