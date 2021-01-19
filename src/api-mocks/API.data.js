@@ -121,6 +121,10 @@ const categories = [
         id: uuid(),
         name: 'office1',
         slug: 'office1',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -161,6 +165,10 @@ const categories = [
         id: uuid(),
         name: 'office2',
         slug: 'office2',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -201,6 +209,10 @@ const categories = [
         id: uuid(),
         name: 'office3',
         slug: 'office3',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -241,6 +253,10 @@ const categories = [
         id: uuid(),
         name: 'office4',
         slug: 'office4',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -281,6 +297,10 @@ const categories = [
         id: uuid(),
         name: 'office5',
         slug: 'office5',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -321,6 +341,10 @@ const categories = [
         id: uuid(),
         name: 'office6',
         slug: 'office6',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -361,6 +385,10 @@ const categories = [
         id: uuid(),
         name: 'office7',
         slug: 'office7',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -401,6 +429,10 @@ const categories = [
         id: uuid(),
         name: 'office8',
         slug: 'office8',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -448,6 +480,10 @@ const categories = [
         id: uuid(),
         name: 'living1',
         slug: 'living1',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -488,6 +524,10 @@ const categories = [
         id: uuid(),
         name: 'living2',
         slug: 'living2',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -528,6 +568,10 @@ const categories = [
         id: uuid(),
         name: 'living3',
         slug: 'living3',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -568,6 +612,10 @@ const categories = [
         id: uuid(),
         name: 'living4',
         slug: 'living4',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -608,6 +656,10 @@ const categories = [
         id: uuid(),
         name: 'living5',
         slug: 'living5',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -648,6 +700,10 @@ const categories = [
         id: uuid(),
         name: 'living6',
         slug: 'living6',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -688,6 +744,10 @@ const categories = [
         id: uuid(),
         name: 'living7',
         slug: 'living7',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -728,6 +788,10 @@ const categories = [
         id: uuid(),
         name: 'living8',
         slug: 'living8',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -775,6 +839,10 @@ const categories = [
         id: uuid(),
         name: 'entryway1',
         slug: 'entryway1',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -815,6 +883,10 @@ const categories = [
         id: uuid(),
         name: 'entryway2',
         slug: 'entryway2',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -855,6 +927,10 @@ const categories = [
         id: uuid(),
         name: 'entryway3',
         slug: 'entryway3',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -895,6 +971,10 @@ const categories = [
         id: uuid(),
         name: 'entryway4',
         slug: 'entryway4',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -935,6 +1015,10 @@ const categories = [
         id: uuid(),
         name: 'entryway5',
         slug: 'entryway5',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -975,6 +1059,10 @@ const categories = [
         id: uuid(),
         name: 'entryway6',
         slug: 'entryway6',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1015,6 +1103,10 @@ const categories = [
         id: uuid(),
         name: 'entryway7',
         slug: 'entryway7',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1055,6 +1147,10 @@ const categories = [
         id: uuid(),
         name: 'entryway8',
         slug: 'entryway8',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1102,6 +1198,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom1',
         slug: 'bedroom1',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1142,6 +1242,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom2',
         slug: 'bedroom2',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1182,6 +1286,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom3',
         slug: 'bedroom3',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1222,6 +1330,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom4',
         slug: 'bedroom4',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1262,6 +1374,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom5',
         slug: 'bedroom5',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1302,6 +1418,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom6',
         slug: 'bedroom6',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1342,6 +1462,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom7',
         slug: 'bedroom7',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1382,6 +1506,10 @@ const categories = [
         id: uuid(),
         name: 'bedroom8',
         slug: 'bedroom8',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1429,6 +1557,10 @@ const categories = [
         id: uuid(),
         name: 'decor1',
         slug: 'decor1',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1469,6 +1601,10 @@ const categories = [
         id: uuid(),
         name: 'decor2',
         slug: 'decor2',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1509,6 +1645,10 @@ const categories = [
         id: uuid(),
         name: 'decor3',
         slug: 'decor3',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1549,6 +1689,10 @@ const categories = [
         id: uuid(),
         name: 'decor4',
         slug: 'decor4',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1589,6 +1733,10 @@ const categories = [
         id: uuid(),
         name: 'decor5',
         slug: 'decor5',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1629,6 +1777,10 @@ const categories = [
         id: uuid(),
         name: 'decor6',
         slug: 'decor6',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1669,6 +1821,10 @@ const categories = [
         id: uuid(),
         name: 'decor7',
         slug: 'decor7',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1709,6 +1865,10 @@ const categories = [
         id: uuid(),
         name: 'decor8',
         slug: 'decor8',
+        dispatch: '2-4',
+        simiDesc: 'Partially solid rubber tree - walnutiii',
+        provisional: 'Jan 27th - Feb 2nd',
+        sippingAs: 'package',
         description:
           'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
         onlineReturnPolicy:
@@ -1755,6 +1915,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'office2',
     slug: 'office2',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1789,6 +1953,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'office4',
     slug: 'office4',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1823,6 +1991,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'living1',
     slug: 'living1',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1857,6 +2029,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'living3',
     slug: 'living3',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1891,6 +2067,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'living6',
     slug: 'living6',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1925,6 +2105,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'living7',
     slug: 'living7',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1959,6 +2143,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'entryway2',
     slug: 'entryway2',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -1993,6 +2181,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'entryway3',
     slug: 'entryway3',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -2027,6 +2219,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'bedroom6',
     slug: 'bedroom6',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -2061,6 +2257,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'bedroom7',
     slug: 'bedroom7',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -2095,6 +2295,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'decor7',
     slug: 'decor7',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
@@ -2129,6 +2333,10 @@ const limitedAndNew = [
     id: uuid(),
     name: 'decor8',
     slug: 'decor8',
+    dispatch: '2-4',
+    simiDesc: 'Partially solid rubber tree - walnutiii',
+    provisional: 'Jan 27th - Feb 2nd',
+    sippingAs: 'package',
     description:
       'Stunning elegance and a floating desktop define the elite 79-inch Ford Desk. The finish is a smooth black stain over an American oak wood veneer. This is accented with silver painted wood feet and risers plus a black panel on top with ports for wire management. It features four drawers with ball bearing slides for ample and effortless storage at your fingertips. Each pedestal features a dual lock with a top drawer for general storage and the lower drawer with filing that fits both letter and legal files. To finish it off there is a wide keyboard tray that can also double as a notepad storage. Please note: Credenza shown is sold separately.',
     onlineReturnPolicy:
