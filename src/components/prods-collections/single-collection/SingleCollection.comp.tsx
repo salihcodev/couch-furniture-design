@@ -31,7 +31,7 @@ const SingleCollection: React.FC<SingleCollectionProps> = ({
         <Row>
           {products.map(({ id, ...product }: any) => (
             <Col xs={12} sm={6} xl={4}>
-              <ProdCard key={id} product={product} />
+              <ProdCard key={id} product={product} parentRoute={routeName} />
             </Col>
           ))}
         </Row>

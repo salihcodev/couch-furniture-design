@@ -18,8 +18,8 @@ const ProdsCollections: React.FC<ProdsCollectionsProps> = ({ categories }) => {
 
   return (
     <main className="prods-collections">
-      {categories.map(({ ...collection }: any) => (
-        <SingleCollection key={collection.id} {...collection} />
+      {categories.map(({ id, ...collection }: any) => (
+        <SingleCollection key={id} {...collection} />
       ))}
     </main>
   );

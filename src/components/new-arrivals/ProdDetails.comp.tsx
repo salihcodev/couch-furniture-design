@@ -67,8 +67,9 @@ const NewArrivals: React.FC<NewArrivalsProps> = ({ newArrivals }) => {
   );
 };
 
-const mapStateToProps = ({ products: { newProducts } }: any) => ({
-  newArrivals: newProducts,
+
+const mapStateToProps = ({ products: { itemsToTest } }: any) => ({
+  newArrivals: itemsToTest,
 });
 
 export default connect(mapStateToProps)(NewArrivals);

@@ -3,8 +3,7 @@ import { categories, limitedAndNew } from '../../api-mocks/API.data';
 
 const INITIAL_STATE = {
   categories: categories,
-  limitedProducts: limitedAndNew,
-  newProducts: limitedAndNew,
+  itemsToTest: limitedAndNew,
   singleProduct: {},
 };
 

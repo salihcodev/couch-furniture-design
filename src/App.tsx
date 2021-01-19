@@ -35,7 +35,7 @@ const CouchFurnitureDesignApp = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/company" component={Company} />
         <Route exact path="/shop" component={Shop} />
-        <Route exact path="/shop/:id" component={SingleProdViewer} />
+        <Route exact path="/shop/:id/:id" component={SingleProdViewer} />
         <Route exact path="/new" component={New} />
         <Route exact path="/bag" component={ShoppingBag} />
         <Route exact path="/wishlist" component={WishList} />

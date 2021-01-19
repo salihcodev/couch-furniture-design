@@ -10,11 +10,16 @@ import { redirectToSingleProd } from '../../redux/products/products.action';
 // INTERFACE:
 interface ProdCardProps {
   product: any;
+  parentRoute: string;
   dispatch: any;
 }
 
 // COMPONENT:=>
-const ProdCard: React.FC<ProdCardProps> = ({ product, dispatch }) => {
+const ProdCard: React.FC<ProdCardProps> = ({
+  product,
+  parentRoute,
+  dispatch,
+}) => {
   const { slug, name, imgUrl, featured, price, availableColors } = product;
 
   return (
@@ -27,7 +32,7 @@ const ProdCard: React.FC<ProdCardProps> = ({ product, dispatch }) => {
       </div>
       <Link
         className="card-wrapper"
-        to={`shop/${slug}`}
+        to={`shop/${parentRoute}/${slug}`}
         style={{ background: `url(${imgUrl}) center/contain no-repeat` }}
         onClick={() => dispatch(redirectToSingleProd(slug))}
       >
