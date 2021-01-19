@@ -6,3 +6,69 @@
 
 // styling:::
 section.single-prod-viewer
+  .wing.prod-imgs
+    height: 40rem
+    div
+      width: 100%
+      height: 100%
+  .wing.prod-info
+    padding: 1rem 0
+    // global
+    h2, h3
+      margin: 0
+      padding: 0
+    p
+      margin: 0
+    .basic
+      margin-bottom: 2rem
+      h3
+        text-transform: uppercase
+      p
+        color: $alt_gray-1
+        margin-left: 0.2rem
+    .price
+      margin-bottom: 1.2rem
+      padding-bottom: 1rem
+      border-bottom: 1px solid $alt_gray
+      h2.number
+        font-family: $uni_font
+      p.payments-info
+        span.pay-calc
+          font-size: 16px
+          font-family: $uni_font
+    .shipping
+      margin-bottom: 1rem
+      p.readability
+        color: $alt_dark
+        margin-bottom: 1rem
+        span.period
+          font-family: $uni_font
+          color: $alt_cl-1
+      p.provisional
+        margin-bottom: 1rem
+        strong
+          color: $alt_gray-1
+          font-size: 15px
+      small.shipping-as
+        color: $alt_cl-1
+    .add-to-bag
+      margin-top: 3rem
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      input,
+      button
+        border: 1px solid $alt_gray
+        border-radius: 0.7rem
+        padding: 0.8rem 0.5rem
+      input
+        width: 8rem
+        margin-right: 0.8rem
+      button
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.333), rgba(94, 122, 145, 0.6))
+        flex-grow: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $main_white
+        font-weight: bold
