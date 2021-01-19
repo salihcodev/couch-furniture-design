@@ -2,21 +2,31 @@
 import './style.sass';
 
 // UTILITIES:
+import { connect } from 'react-redux';
+
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
+import CollectionViewer from '../../components/collection-viewer/CollectionViewer.comp';
 
 // INTERFACE:
+interface Props {
+  limitedProducts: any;
+}
 
-// App interface:
-interface Props {}
-
-// Home Page:=>
-const Shop: React.FC<Props> = () => {
+// New products Page:=>
+const New: React.FC<Props> = ({ limitedProducts }) => {
   return (
-    <div className="new-page">
+    <main className="limited-page">
       <Hero cover={''} mini={true} heroTitle="New products in the stock" />
-    </div>
+
+      {/* limited prods */}
+      <CollectionViewer products={limitedProducts} parentRoute="new" />
+    </main>
   );
 };
 
-export default Shop;
+const mapStateToProps = ({ products: { itemsToTest } }: any) => ({
+  limitedProducts: itemsToTest,
+});
+
+export default connect(mapStateToProps)(New);
