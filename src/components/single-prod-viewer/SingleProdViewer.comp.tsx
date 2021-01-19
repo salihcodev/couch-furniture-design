@@ -19,16 +19,6 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   singleProduct,
 }) => {
   const {
-    // availableColors,
-    // description,
-    // details,
-    // featured,
-    // freeShipping,
-    // id,
-    // imgUrl,
-    // slug,
-    // onlineReturnPolicy,
-    // returnAndExchange,
     images,
     name,
     price,
