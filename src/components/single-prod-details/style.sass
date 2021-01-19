@@ -1,0 +1,51 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_mixins'
+
+// styling:::
+section.single-prod-details
+  margin: 10rem 0
+  min-height: 20rem
+  h2.heading
+    color: $alt_cl-1
+    span.prod-name
+      font-weight: bold
+  // grlobal:
+  section
+    padding: 0 1rem
+    margin-bottom: 2rem
+  h5.heading
+    font-family: $uni_font
+  p,li
+    color: $alt_gray-3
+  // 
+  section.prod-desc
+    margin-top: 2rem
+    margin-bottom: 4rem
+  section.details
+    border-right: 1px solid $alt_gray
+    ul
+      li.details-item
+        margin-bottom: 0.5rem
+        padding: 0.3rem 0
+        &:not(:last-child)
+          border-bottom: 1px solid $alt_gray
+  section.online-policy
+    border-right: 1px solid $alt_gray
+  section.more-about-prod
+    p
+      span.icon
+        margin-right: 0.5rem
+        color: $alt_gray-3
+        font-size: 20px
+      span.txt
+
+@media screen and ( max-width:  990px)
+  section.online-policy
+    border: none !important
+
+@media screen and ( max-width:  769px)
+  section.details
+    border: none !important

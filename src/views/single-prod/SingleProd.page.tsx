@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 import SingleProdViewer from '../../components/single-prod-viewer/SingleProdViewer.comp';
+import SingleProdDetails from '../../components/single-prod-details/ProdDetails.comp';
 
 // INTERFACE:
 
@@ -27,8 +28,11 @@ const SingleProd: React.FC<Props> = ({ singleProduct }) => {
         titleUni={singleProduct[0].name}
       />
 
-      {/* single viewer */}
+      {/* single prod  viewer */}
       <SingleProdViewer singleProduct={singleProduct[0]} />
+
+      {/* single prod  details */}
+      <SingleProdDetails singleProduct={singleProduct[0]} />
     </main>
   );
 };
