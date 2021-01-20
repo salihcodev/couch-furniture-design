@@ -1,0 +1,31 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_mixins'
+
+// styling:::
+section.trade-feat-wrapper
+  ul.trade-feat-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    @include no-list-style()
+    li
+      width: 20rem
+      pading: 1rem
+      margin: 0.5rem
+      h4.heading
+        display: flex
+        font-family: $uni_font
+        color: $alt_gray-3
+        span.icon
+          margin-top: -0.3rem
+          margin-right: 0.5rem
+          display: block
+          font-size: 1.5rem
+          color: $alt_cl-1
+        span.txt
+      p.description
+        font-size: 14px
+        color: $alt_gray-3
