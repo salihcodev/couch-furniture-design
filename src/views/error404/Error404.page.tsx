@@ -10,7 +10,7 @@ interface Props {}
 // Home Page:=>
 const Error404Page: React.FC<Props> = () => {
   return (
-    <section className="not-found">
+    <main className="not-found">
       <div className="flex-shield">
         <h2 className="h1 error-title">
           Error <strong className="error-num">404</strong> Not Found
@@ -23,7 +23,7 @@ const Error404Page: React.FC<Props> = () => {
           Back to home
         </Link>
       </div>
-    </section>
+    </main>
   );
 };
 

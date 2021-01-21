@@ -4,15 +4,19 @@ import './style.sass';
 // UTILITIES:
 import { NavLink } from 'react-router-dom';
 import SigningButton from '../../../signing-button/SigningButton.comp';
+import { connect } from 'react-redux';
+import { toggleMenuVisibility } from '../../../../redux/mobile-menu/mobileMenu.action';
 
 // IMPORT COMPONENTS:
 import MenuShopBlocks from './menu-shop-blocks/MenuShopBlocks.comp';
 
 // INTERFACE:
-interface Props {}
+interface Props {
+  toggleMenuVisibility: () => any;
+}
 
 // COMPONENT:=>
-const MobileMenuWrapper: React.FC<Props> = () => {
+const MobileMenuWrapper: React.FC<Props> = ({ toggleMenuVisibility }) => {
   return (
     <section className="mobile-menu-wrapper">
       <div className="signing">
@@ -41,6 +45,7 @@ const MobileMenuWrapper: React.FC<Props> = () => {
             activeClassName="active-route"
             to="/shop"
             className="route-link"
+            onClick={toggleMenuVisibility}
           >
             shop
           </NavLink>
@@ -54,6 +59,7 @@ const MobileMenuWrapper: React.FC<Props> = () => {
             activeClassName="active-route"
             to="/new"
             className="route-link"
+            onClick={toggleMenuVisibility}
           >
             new
           </NavLink>
@@ -63,8 +69,29 @@ const MobileMenuWrapper: React.FC<Props> = () => {
             activeClassName="active-route"
             to="/limited-release"
             className="route-link"
+            onClick={toggleMenuVisibility}
           >
             limited release
+          </NavLink>
+        </li>
+        <li className="nav-route reg-route">
+          <NavLink
+            activeClassName="active-route"
+            to="/contact"
+            className="route-link"
+            onClick={toggleMenuVisibility}
+          >
+            Contact
+          </NavLink>
+        </li>
+        <li className="nav-route reg-route">
+          <NavLink
+            activeClassName="active-route"
+            to="/company"
+            className="route-link"
+            onClick={toggleMenuVisibility}
+          >
+            Company
           </NavLink>
         </li>
       </ul>
@@ -72,4 +99,7 @@ const MobileMenuWrapper: React.FC<Props> = () => {
   );
 };
 
-export default MobileMenuWrapper;
+const mapDispatchToProps = (dispatch: any) => ({
+  toggleMenuVisibility: () => dispatch(toggleMenuVisibility()),
+});
+export default connect(null, mapDispatchToProps)(MobileMenuWrapper);

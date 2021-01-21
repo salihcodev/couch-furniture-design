@@ -1,6 +1,7 @@
 // UTILITIES:
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation, withRouter } from 'react-router-dom';
 
 // IMPORT ROUTES:
 import HomePage from './views/home/Home.page';
@@ -21,27 +22,39 @@ import SingleProdViewer from './views/single-prod/SingleProd.page';
 import Header from './components/header/Header.comp';
 import Footer from './components/footer/Footer.comp';
 
+// auto scroll to top, smoothly.
+const _ScrollToTop = ({ children }: any) => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [pathname]);
+  return children;
+};
+const ScrollToTop = withRouter(_ScrollToTop);
+
 // ROOT COMPONENT:=>
 const CouchFurnitureDesignApp = () => {
   return (
     <>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/trade" component={Trade} />
-        <Route exact path="/signin" component={Signin} />
-        <Route exact path="/limited-release" component={LimitedReleases} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/company" component={Company} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/shop/:id/:id" component={SingleProdViewer} />
-        <Route exact path="/new" component={New} />
-        <Route exact path="/bag" component={ShoppingBag} />
-        <Route exact path="/wishlist" component={WishList} />
-        <Route path="*" component={Error404Page} />
-      </Switch>
-      <Footer />
+      <ScrollToTop>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/trade" component={Trade} />
+          <Route exact path="/signin" component={Signin} />
+          <Route exact path="/limited-release" component={LimitedReleases} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/company" component={Company} />
+          <Route exact path="/shop" component={Shop} />
+          <Route exact path="/shop/:id/:id" component={SingleProdViewer} />
+          <Route exact path="/new" component={New} />
+          <Route exact path="/bag" component={ShoppingBag} />
+          <Route exact path="/wishlist" component={WishList} />
+          <Route path="*" component={Error404Page} />
+        </Switch>
+        <Footer />
+      </ScrollToTop>
     </>
   );
 };

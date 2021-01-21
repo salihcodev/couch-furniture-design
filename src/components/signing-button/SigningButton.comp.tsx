@@ -4,6 +4,8 @@ import './style.sass';
 // UTILITIES:
 import { NavLink } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
+import { connect } from 'react-redux';
+import { toggleMenuVisibility } from '../../redux/mobile-menu/mobileMenu.action';
 
 // INTERFACE:
 interface ButtonProps {
@@ -14,6 +16,7 @@ interface ButtonProps {
   bkg: string;
   clr: string;
   logIn: boolean;
+  toggleMenuVisibility: any;
 }
 
 // COMPONENT:=>
@@ -25,6 +28,7 @@ const SigningButton: React.FC<ButtonProps> = ({
   bkg,
   clr,
   logIn,
+  toggleMenuVisibility,
 }) => {
   const btnStyles = {
     background: bkg,
@@ -41,6 +45,7 @@ const SigningButton: React.FC<ButtonProps> = ({
       role="button"
       to={path}
       style={btnStyles}
+      onClick={toggleMenuVisibility}
     >
       {name}
       <span className="icon">{logIn ? <FiLogIn /> : ''}</span>
@@ -48,4 +53,8 @@ const SigningButton: React.FC<ButtonProps> = ({
   );
 };
 
-export default SigningButton;
+const mapDispatchToProps = (dispatch: any) => ({
+  toggleMenuVisibility: () => dispatch(toggleMenuVisibility()),
+});
+
+export default connect(null, mapDispatchToProps)(SigningButton);

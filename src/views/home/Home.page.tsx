@@ -18,7 +18,7 @@ interface Props {}
 // Home Page:=>
 const HomePage: React.FC<Props> = () => {
   return (
-    <div className="home-page">
+    <main className="home-page">
       <Hero
         cover={heroHome}
         mini={false}
@@ -35,7 +35,7 @@ const HomePage: React.FC<Props> = () => {
       <Services />
       {/* categories */}
       <Categories />
-    </div>
+    </main>
   );
 };
 

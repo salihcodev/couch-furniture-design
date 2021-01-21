@@ -13,13 +13,13 @@ interface Props {}
 // Home Page:=>
 const WishList: React.FC<Props> = () => {
   return (
-    <div className="wishlist-page">
+    <main className="wishlist-page">
       <Hero
         cover={''}
         mini={true}
         heroTitle="Your wishlist, Try to move them to your bag"
       />
-    </div>
+    </main>
   );
 };
 

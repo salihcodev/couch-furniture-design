@@ -23,7 +23,7 @@ const SubHeaderNav = () => {
             <SigningButton
               name="Login"
               path="/signin"
-              borderClr="#ccc"
+              borderClr="transparent"
               borderW={1}
               bkg="transparent"
               clr="#999"
@@ -36,7 +36,7 @@ const SubHeaderNav = () => {
               borderClr="transparent"
               borderW={1}
               bkg="#1f2833"
-              clr="#ddd"
+              clr="#d6bc8b"
               logIn={false}
             />
           </div>

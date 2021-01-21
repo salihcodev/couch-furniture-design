@@ -5,7 +5,10 @@ import './style.sass';
 import { NavLink } from 'react-router-dom';
 import { IoBagOutline, IoHeartOutline } from 'react-icons/io5';
 import { connect } from 'react-redux';
-import { toggleMenuVisibility } from '../../../redux/mobile-menu/mobileMenu.action';
+import {
+  toggleMenuVisibility,
+  closeMobileMenu,
+} from '../../../redux/mobile-menu/mobileMenu.action';
 
 // IMPORT COMPONENTS:
 import { ReactComponent as Logo } from '../../../assets/couchFurnitureDesign.logo-min.svg';
@@ -14,12 +17,14 @@ import MobileMenuWrapper from './mobile-menu-wrapper/MobileMenuWrapper.comp';
 // INTERFACE:
 interface Props {
   toggleMenuVisibility: () => any;
+  closeMobileMenu: () => any;
   menuHidden: boolean;
 }
 
 // COMPONENT:=>
 const MobileHeaderNav: React.FC<Props> = ({
   toggleMenuVisibility,
+  closeMobileMenu,
   menuHidden,
 }) => {
   return (
@@ -31,7 +36,7 @@ const MobileHeaderNav: React.FC<Props> = ({
         <span className="bar"></span>
       </button>
       <div className="nav-logo">
-        <NavLink to="/">
+        <NavLink to="/" onClick={closeMobileMenu}>
           <Logo />
         </NavLink>
       </div>
@@ -41,6 +46,7 @@ const MobileHeaderNav: React.FC<Props> = ({
             activeClassName="active-route"
             to="/wishlist"
             className="route-link"
+            onClick={closeMobileMenu}
           >
             <IoHeartOutline title="Your wishlist" />
             <span className="count">5</span>
@@ -51,6 +57,7 @@ const MobileHeaderNav: React.FC<Props> = ({
             activeClassName="active-route"
             to="/bag"
             className="route-link"
+            onClick={closeMobileMenu}
           >
             <IoBagOutline title="Your shopping bag" />
           </NavLink>
@@ -64,6 +71,7 @@ const MobileHeaderNav: React.FC<Props> = ({
 
 const mapDispatchToProps = (dispatch: any) => ({
   toggleMenuVisibility: () => dispatch(toggleMenuVisibility()),
+  closeMobileMenu: () => dispatch(closeMobileMenu()),
 });
 
 const mapStateToProps = ({ mobileMenu: { menuHidden } }: any) => ({
