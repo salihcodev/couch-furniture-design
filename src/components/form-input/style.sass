@@ -1,0 +1,83 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_animation'
+
+// styling:::
+// global styles
+label
+  color: $alt_gray-3
+input[type='text'],
+input[type='email'],
+textarea
+  width: 100%
+  border: 1px solid $alt_gray
+  border-radius: 0.5rem
+  padding: 1rem
+  margin: 1rem 0
+  caret-color: $alt_cl-3
+
+.form-input-text
+.form-input-check
+  display: flex
+  align-items: baseline
+  input
+    margin: 0 0.3rem
+.form-input-select
+  position: relative
+  select
+    border: 1px solid $alt_gray
+    display: block
+    border-radius: 0.7rem
+    padding: 1rem
+    background: transparent
+    margin: 1rem 0
+    color: $alt_gray-3
+  span.select-icon
+    position: absolute
+    top: 1px
+    right: 6px
+    bottom: 1px
+    background: $alt_gray
+    color: $alt_cl-1
+    border-top-right-radius: 0.5rem
+    border-bottom-right-radius: 0.5rem
+    width: 2.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+.form-input-textarea
+  small
+    margin: 0 0.3rem
+    color: $alt_cl-1
+    margin-bottom: 2rem
+    display: block
+  textarea
+    margin-bottom: 0
+
+.form-input-text,
+.form-input-email,
+.form-input-textarea
+  position: relative
+  input, textarea
+    // &:focus
+    //   + label
+    //     top: 2px
+    //     font-size: 12px
+    //     background: #fff
+    //     border: 3px solid #fff
+    //     border-radius: 0.7rem
+    //     padding: 0.2rem 0.4rem
+  label
+    position: absolute
+    // top: 38px
+    left: 20px
+    transition: $main_transition
+    background: #fff
+    top: 2px
+    font-size: 12px
+    background: #fff
+    border: 3px solid #fff
+    border-radius: 0.7rem
+    padding: 0.2rem 0.4rem
