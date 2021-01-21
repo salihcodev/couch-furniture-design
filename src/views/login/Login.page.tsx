@@ -2,20 +2,19 @@
 import './style.sass';
 
 // UTILITIES:
+
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 
 // INTERFACE:
-
-// App interface:
 interface Props {}
 
-// Home Page:=>
+// Signin Page:=>
 const Signin: React.FC<Props> = () => {
   return (
-    <div className="signin-page">
+    <main className="signin-page">
       <Hero cover={''} mini={true} heroTitle="Welcome back" />
-    </div>
+    </main>
   );
 };
 

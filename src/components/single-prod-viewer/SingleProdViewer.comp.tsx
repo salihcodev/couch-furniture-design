@@ -8,6 +8,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 // COMPONENTS:
 import SliderItem from '../slider-item/SlideItem.comp';
+import SudoButton from '../sudo-button/SudoButton.comp';
 
 // INTERFACE:
 interface SingleProdViewerProps {
@@ -89,7 +90,14 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                   inputMode="decimal"
                   placeholder="Quantity"
                 />
-                <button className="add-to-bag">In the bag</button>
+                <SudoButton
+                  btnTxt="In the bag"
+                  btnType=""
+                  borderClr=""
+                  borderW={0}
+                  bkg="linear-gradient(45deg, rgba(0, 0, 0, 0.333), rgba(94, 122, 145, 0.6))"
+                  clr="#ddd"
+                />
               </div>
             </div>
           </Col>

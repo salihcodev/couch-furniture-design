@@ -2,21 +2,23 @@
 import './style.sass';
 
 // UTILITIES:
-import { useLocation } from 'react-router-dom';
+
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
+import FormInputs from '../../components/form/Form.comp';
 
 // INTERFACE:
-
-// App interface:
 interface Props {}
 
-// Home Page:=>
+// Contact Page:=>
 const Contact: React.FC<Props> = () => {
   return (
-    <div className="contact-page">
+    <main className="contact-page">
       <Hero cover={''} mini={true} heroTitle="Keep in touch" />
-    </div>
+
+      {/* contact form input: */}
+      <FormInputs formHeading="Contact Us" input1={{ xs: 12 }} />
+    </main>
   );
 };
 
