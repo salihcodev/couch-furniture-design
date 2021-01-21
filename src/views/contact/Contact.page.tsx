@@ -5,7 +5,7 @@ import './style.sass';
 
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
-import FormInputs from '../../components/form/Form.comp';
+import ContactForm from '../../components/contact-form/ContactForm.comp';
 
 // INTERFACE:
 interface Props {}
@@ -17,7 +17,7 @@ const Contact: React.FC<Props> = () => {
       <Hero cover={''} mini={true} heroTitle="Keep in touch" />
 
       {/* contact form input: */}
-      <FormInputs formHeading="Contact Us" input1={{ xs: 12 }} />
+      <ContactForm formHeading="Contact Us" input1={{ xs: 12 }} />
     </main>
   );
 };

@@ -4,6 +4,7 @@ import './style.sass';
 // UTILITIES:
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
+import SignUpForm from '../../components/signup-form/SignUpForm';
 
 // INTERFACE:
 
@@ -19,6 +20,9 @@ const Signup: React.FC<Props> = () => {
         mini={true}
         heroTitle="We are happy for joining you our community :)"
       />
+
+      {/* signup form */}
+      <SignUpForm formHeading="Sign up" />
     </main>
   );
 };

@@ -18,6 +18,7 @@ interface FormInputProps {
   selectWidth?: string;
   textArea?: boolean;
   textAreaRows?: number;
+  password?: boolean;
 }
 
 // COMPONENT:=>
@@ -34,39 +35,31 @@ const FormInput: React.FC<FormInputProps> = ({
   selectWidth,
   textArea,
   textAreaRows,
+  password,
 }) => {
   return (
     <>
-      {!checkbox && !textArea && !selectInput && !email && (
+      {!checkbox && !textArea && !selectInput && !email && !password && (
         <div className="form-input-text">
-          <input
-            type={inputType}
-            name={inputName}
-            id={inputId}
-            // placeholder={inputPlaceholder}
-          />
+          <input type={inputType} name={inputName} id={inputId} />
           <label htmlFor={inputId}>{inputLabel}</label>
         </div>
       )}
       {email && (
         <div className="form-input-email">
-          <input
-            type={inputType}
-            name={inputName}
-            id={inputId}
-            // placeholder={inputPlaceholder}
-          />
+          <input type={inputType} name={inputName} id={inputId} />
+          <label htmlFor={inputId}>{inputLabel}</label>
+        </div>
+      )}
+      {password && (
+        <div className="form-input-password">
+          <input type={inputType} name={inputName} id={inputId} />
           <label htmlFor={inputId}>{inputLabel}</label>
         </div>
       )}
       {checkbox && (
         <div className="form-input-check">
-          <input
-            type={inputType}
-            name={inputName}
-            id={inputId}
-            // placeholder={inputPlaceholder}
-          />
+          <input type={inputType} name={inputName} id={inputId} />
           <label htmlFor={inputId}>
             <small>{inputLabel}</small>
           </label>
@@ -86,12 +79,7 @@ const FormInput: React.FC<FormInputProps> = ({
       )}
       {textArea && (
         <div className="form-input-textarea">
-          <textarea
-            name={inputName}
-            rows={textAreaRows}
-            id={inputId}
-            // placeholder={inputPlaceholder}
-          />
+          <textarea name={inputName} rows={textAreaRows} id={inputId} />
           <label htmlFor={inputId}>{inputLabel}</label>
           <small>*Optional</small>
         </div>
