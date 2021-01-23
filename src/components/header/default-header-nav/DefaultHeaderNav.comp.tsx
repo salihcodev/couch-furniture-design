@@ -4,17 +4,25 @@ import './style.sass';
 // UTILITIES:
 import { NavLink } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
 // IMPORT COMPONENTS:
 import { ReactComponent as Logo } from '../../../assets/couchFurnitureDesign.logo-min.svg';
 import { IoBagOutline, IoHeartOutline } from 'react-icons/io5';
 import ShopMenu from './shop-menu/ShopMenu.comp';
+import ToAddListWrapper from '../../../components/to-add-list-wrapper/ToAddListWrapper.comp';
 
 // INTERFACE:
-interface Props {}
+interface DefaultHeaderNavProps {
+  bagList: Array<[]>;
+  wishlist: Array<[]>;
+}
 
 // COMPONENT:=>
-const DefaultHeaderNav: React.FC<Props> = () => {
+const DefaultHeaderNav: React.FC<DefaultHeaderNavProps> = ({
+  bagList,
+  wishlist,
+}) => {
   return (
     <Container fluid>
       <nav className="default-header-nav">
@@ -88,8 +96,19 @@ const DefaultHeaderNav: React.FC<Props> = () => {
                   className="route-link"
                 >
                   <IoHeartOutline title="Your wishlist" />
-                  <span className="count">5</span>
+                  {wishlist.length > 0 && (
+                    <span className="count">
+                      {wishlist?.length > 9 ? '9+' : wishlist?.length}
+                    </span>
+                  )}
                 </NavLink>
+                <ToAddListWrapper
+                  listItems={wishlist}
+                  width={16}
+                  redirectTo="/wishlist"
+                  redirectTxt="Go to wishlist"
+                  isWishlist={true}
+                />
               </li>
               <li className="nav-route icon-route bag">
                 <NavLink
@@ -98,8 +117,18 @@ const DefaultHeaderNav: React.FC<Props> = () => {
                   className="route-link"
                 >
                   <IoBagOutline title="Your shopping bag" />
+                  {bagList.length > 0 && (
+                    <span className="count">
+                      {bagList?.length > 9 ? '9+' : bagList?.length}
+                    </span>
+                  )}
                 </NavLink>
-                <span className="count">5</span>
+                <ToAddListWrapper
+                  listItems={bagList}
+                  width={16}
+                  redirectTxt="Checkout"
+                  redirectTo="/bag"
+                />
               </li>
             </ul>
           </div>
@@ -109,4 +138,12 @@ const DefaultHeaderNav: React.FC<Props> = () => {
   );
 };
 
-export default DefaultHeaderNav;
+const mapStateToProps = ({
+  bag: { bagList },
+  wishlist: { wishlist },
+}: any) => ({
+  bagList: bagList,
+  wishlist: wishlist,
+});
+
+export default connect(mapStateToProps)(DefaultHeaderNav);

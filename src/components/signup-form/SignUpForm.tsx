@@ -65,7 +65,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ formHeading }) => {
                 {/* submit button */}
                 <SudoButton>
                   <button type="submit" className="sudo-btn">
-                    <span className="txt">In the bag</span>
+                    <span className="txt">{formHeading}</span>
                   </button>
                 </SudoButton>
               </Row>

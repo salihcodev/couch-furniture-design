@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { BsHeart } from 'react-icons/bs';
 import { connect } from 'react-redux';
 import { redirectToSingleProd } from '../../redux/products/products.action';
+import { addItemToWishlist } from '../../redux/wishlist/wishlist.action';
 
 // INTERFACE:
 interface ProdCardProps {
@@ -26,7 +27,10 @@ const ProdCard: React.FC<ProdCardProps> = ({
     <div className="prod-card">
       <div className="prod-card-header">
         {featured && <span className="featured">Featured</span>}
-        <button className="add-to-wishlist">
+        <button
+          className="add-to-wishlist"
+          onClick={() => dispatch(addItemToWishlist(product))}
+        >
           <BsHeart />
         </button>
       </div>

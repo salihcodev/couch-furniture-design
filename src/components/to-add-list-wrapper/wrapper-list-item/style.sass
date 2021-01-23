@@ -1,0 +1,27 @@
+// importing:::
+@import '../../../sass-utl/_transitions'
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_fonts'
+// styling:::
+li.wrapper-list-item
+  &:not(:last-child)
+    border-bottom: 1px solid $alt_gray
+  a
+    display: block
+    color: $alt_gray-3
+    height: 5rem
+    margin: 1rem 0
+    display: flex
+    .prod-img
+      flex-grow: 3
+      .img-cont
+        width: 100%
+        height: 100%
+    .prod-details
+      padding-right: 1rem
+      flex-grow: 2
+      h6.prod-name
+      small.prod-price
+        display: block
+        font-family: $uni_font
+      span.prod-quantity
