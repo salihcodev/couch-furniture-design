@@ -1,13 +1,13 @@
 import bagActionTypes from './bag.actionTypes';
 
 const INITIAL_STATE = {
-  bag: [],
+  bagList: [],
 };
 
 const bagReducer = (state = INITIAL_STATE, action: any) => {
   switch (action.type) {
     case bagActionTypes.ADD_ITEM_TO_BAG:
-      return { ...state, bag: [...state.bag, action.payload] };
+      return { ...state, bagList: [...state.bagList, action.payload] };
 
     default:
       return state;

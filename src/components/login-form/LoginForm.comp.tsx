@@ -45,7 +45,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ formHeading }) => {
                 {/* submit button */}
                 <SudoButton>
                   <button type="submit" className="sudo-btn">
-                    <span className="txt">In the bag</span>i
+                    <span className="txt">{formHeading}</span>
                   </button>
                 </SudoButton>
               </Row>

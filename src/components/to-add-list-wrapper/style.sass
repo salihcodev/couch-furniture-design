@@ -1,0 +1,55 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_mixins'
+@import '../../sass-utl/_animation'
+
+// styling:::
+section.to-add-list-wrapper
+  position: absolute
+  border: 1px solid $alt_gray
+  z-index: 10
+  background: $main_white
+  border-radius: 0.3rem
+  padding: 0 0 0.5rem
+  animation: graded-opacity ease-in-out 0.4s
+  span.to-be-hoverable
+    position: absolute
+    top: -20px
+    left: 0
+    right: 0
+    height: 2rem
+  .bag-is-empty
+    height: 5rem
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    text-align: center
+    padding-top: 2rem
+    h5
+      text-transform: uppercase
+      color: $alt_cl-3-d
+  .list-container
+    max-height: 26rem
+    overflow-y: scroll
+    padding-bottom: 8rem
+  ul.list-items
+    margin-top: 1.5rem !important
+    @include no-list-style()
+  ul.list-items.no-quantity
+    li
+      span.prod-quantity
+        display: none
+  .redirect
+    padding: 0 1rem 1rem
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background: $main_white
+    border-top: 1px solid $alt_gray
+    a.redirect-link
+      width: 100%
+      background: $main_gradient
+      display: flex

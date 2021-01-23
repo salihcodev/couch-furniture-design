@@ -146,6 +146,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -190,6 +191,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -234,6 +236,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -278,6 +281,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -322,6 +326,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -366,6 +371,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -410,6 +416,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -454,6 +461,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -505,6 +513,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -549,6 +558,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -593,6 +603,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -637,6 +648,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -681,6 +693,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -725,6 +738,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -769,6 +783,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -813,6 +828,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -864,6 +880,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -908,6 +925,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -952,6 +970,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -996,6 +1015,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1040,6 +1060,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1084,6 +1105,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1128,6 +1150,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1172,6 +1195,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1223,6 +1247,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1267,6 +1292,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1311,6 +1337,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1355,6 +1382,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1399,6 +1427,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1443,6 +1472,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1487,6 +1517,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1531,6 +1562,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1582,6 +1614,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1626,6 +1659,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1670,6 +1704,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1714,6 +1749,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1758,6 +1794,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1802,6 +1839,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1846,6 +1884,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1890,6 +1929,7 @@ const categories = [
           'Matching End Table Available',
           '51 LBS',
         ],
+        quantity: 1,
         returnAndExchange: true,
         freeShipping: true,
         images: [
@@ -1934,6 +1974,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -1972,6 +2013,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2010,6 +2052,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2048,6 +2091,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2086,6 +2130,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2124,6 +2169,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2162,6 +2208,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2200,6 +2247,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2238,6 +2286,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2276,6 +2325,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2314,6 +2364,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
@@ -2352,6 +2403,7 @@ const limitedAndNew = [
       'Matching End Table Available',
       '51 LBS',
     ],
+    quantity: 1,
     returnAndExchange: true,
     freeShipping: true,
     images: [
