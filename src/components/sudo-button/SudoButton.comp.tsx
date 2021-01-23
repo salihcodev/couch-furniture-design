@@ -21,6 +21,7 @@ const SudoButton: React.FC<SudoButtonProps> = ({
   borderW,
   bkg,
   clr,
+  children,
 }) => {
   const btnStyles = {
     background: bkg,
@@ -31,7 +32,8 @@ const SudoButton: React.FC<SudoButtonProps> = ({
 
   return (
     <button type={btnType} className="sudo-btn" style={btnStyles}>
-      {btnTxt}
+      <span className="txt">{btnTxt}</span>
+      <span className="icon">{children}</span>
     </button>
   );
 };
