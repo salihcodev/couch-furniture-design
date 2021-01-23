@@ -17,7 +17,7 @@ const Contact: React.FC<Props> = () => {
       <Hero cover={''} mini={true} heroTitle="Keep in touch" />
 
       {/* contact form input: */}
-      <ContactForm formHeading="Contact Us" input1={{ xs: 12 }} />
+      <ContactForm formHeading="Contact Us" />
     </main>
   );
 };

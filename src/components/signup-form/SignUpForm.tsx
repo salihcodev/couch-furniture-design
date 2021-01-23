@@ -63,14 +63,11 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ formHeading }) => {
                   />
                 </Col>
                 {/* submit button */}
-                <SudoButton
-                  btnTxt={formHeading}
-                  btnType="submit"
-                  borderClr=""
-                  borderW={0}
-                  bkg="linear-gradient(45deg, rgba(0, 0, 0, 0.333), rgba(94, 122, 145, 0.6))"
-                  clr="#fff"
-                />
+                <SudoButton>
+                  <button type="submit" className="sudo-btn">
+                    <span className="txt">In the bag</span>
+                  </button>
+                </SudoButton>
               </Row>
             </form>
           </div>

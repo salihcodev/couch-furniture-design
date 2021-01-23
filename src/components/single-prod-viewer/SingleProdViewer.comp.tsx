@@ -7,6 +7,8 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { WiStars } from 'react-icons/wi';
 import { IoBag } from 'react-icons/io5';
+import { connect } from 'react-redux';
+import { addItemToBag } from '../../redux/bag/bag.action';
 
 // COMPONENTS:
 import SliderItem from '../slider-item/SlideItem.comp';
@@ -15,18 +17,20 @@ import SudoButton from '../sudo-button/SudoButton.comp';
 // INTERFACE:
 interface SingleProdViewerProps {
   singleProduct: any;
+  dispatch: any;
 }
 
 // COMPONENT:=>
 const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   singleProduct,
+  dispatch,
 }) => {
   const {
     images,
     name,
     price,
     simiDesc,
-    dispatch,
+    dispatchAs,
     provisional,
     sippingAs,
     availableColors,
@@ -79,7 +83,7 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
               <div className="shipping">
                 <p className="readability">
                   Ready for dispatch in{' '}
-                  <span className="period">{dispatch} </span> working days
+                  <span className="period">{dispatchAs} </span> working days
                 </p>
                 <p className="provisional">
                   Provisional delivery : <strong>{provisional}</strong>
@@ -93,7 +97,7 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                       <span className="icon">
                         <WiStars />
                       </span>
-                      <span className="txt">This product is featured</span>{' '}
+                      <span className="txt">This product is featured</span>
                     </div>
                   </div>
                 )}
@@ -119,15 +123,16 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                     max="10"
                   />
                 </div>
-                <SudoButton
-                  btnTxt="In the bag"
-                  btnType=""
-                  borderClr=""
-                  borderW={0}
-                  bkg="linear-gradient(45deg, rgba(0, 0, 0, 0.333), rgba(94, 122, 145, 0.6))"
-                  clr="#ddd"
-                >
-                  <IoBag />
+                <SudoButton>
+                  <button
+                    className="sudo-btn"
+                    onClick={() => dispatch(addItemToBag(singleProduct))}
+                  >
+                    <span className="txt">In the bag</span>
+                    <span className="icon">
+                      <IoBag />
+                    </span>
+                  </button>
                 </SudoButton>
               </div>
             </div>
@@ -138,4 +143,4 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   );
 };
 
-export default SingleProdViewer;
+export default connect()(SingleProdViewer);

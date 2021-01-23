@@ -11,18 +11,6 @@ import FormInput from '../form-input/FormInput.comp';
 // INTERFACE:
 interface FormProps {
   formHeading: string;
-  input1: any;
-  input2?: any;
-  input3?: any;
-  input4?: any;
-  input5?: any;
-  input6?: any;
-  input7?: any;
-  input8?: any;
-  input9?: any;
-  input10?: any;
-  input11?: any;
-  input12?: any;
 }
 
 const selectData = [
@@ -35,21 +23,7 @@ const selectData = [
 ];
 
 // COMPONENT:=>
-const Form: React.FC<FormProps> = ({
-  formHeading,
-  input1,
-  input2,
-  input3,
-  input4,
-  input5,
-  input6,
-  input7,
-  input8,
-  input9,
-  input10,
-  input11,
-  input12,
-}) => {
+const Form: React.FC<FormProps> = ({ formHeading }) => {
   return (
     <Container>
       <section className="form">
@@ -60,7 +34,7 @@ const Form: React.FC<FormProps> = ({
           <div className="inputs-wrapper">
             <form>
               <Row>
-                <Col xs={input1.xs}>
+                <Col xs={12}>
                   <FormInput
                     inputType="text"
                     inputId="contact-name"
@@ -69,7 +43,7 @@ const Form: React.FC<FormProps> = ({
                     inputPlaceholder="Contact name"
                   />
                 </Col>
-                <Col xs={input1.xs}>
+                <Col xs={12}>
                   <FormInput
                     inputType="email"
                     inputId="email-address"
@@ -79,7 +53,7 @@ const Form: React.FC<FormProps> = ({
                     email
                   />
                 </Col>
-                <Col xs={input1.xs}>
+                <Col xs={12}>
                   <FormInput
                     inputType="select"
                     inputId="select-topic"
@@ -89,7 +63,7 @@ const Form: React.FC<FormProps> = ({
                     selectWidth="100%"
                   />
                 </Col>
-                <Col xs={input1.xs}>
+                <Col xs={12}>
                   <FormInput
                     inputType="textarea"
                     inputId="contact-message"
@@ -100,7 +74,7 @@ const Form: React.FC<FormProps> = ({
                     textAreaRows={7}
                   />
                 </Col>
-                <Col xs={input1.xs}>
+                <Col xs={12}>
                   <FormInput
                     inputType="checkbox"
                     inputId="accepting-terms"
@@ -112,14 +86,11 @@ const Form: React.FC<FormProps> = ({
                 </Col>
 
                 {/* submit button */}
-                <SudoButton
-                  btnTxt={formHeading}
-                  btnType="submit"
-                  borderClr=""
-                  borderW={0}
-                  bkg="linear-gradient(45deg, rgba(0, 0, 0, 0.333), rgba(94, 122, 145, 0.6))"
-                  clr="#fff"
-                />
+                <SudoButton>
+                  <button type="submit" className="sudo-btn">
+                    <span className="txt">{formHeading}</span>
+                  </button>
+                </SudoButton>
               </Row>
             </form>
           </div>

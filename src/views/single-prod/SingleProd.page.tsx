@@ -25,7 +25,7 @@ const SingleProd: React.FC<Props> = ({ singleProduct }) => {
         cover={''}
         mini={true}
         heroTitle={`More details about`}
-        titleUni={singleProduct[0].name}
+        titleUni={singleProduct[0]?.name}
       />
 
       {/* single prod  viewer */}
