@@ -96,7 +96,7 @@ const DefaultHeaderNav: React.FC<DefaultHeaderNavProps> = ({
                   className="route-link"
                 >
                   <IoHeartOutline title="Your wishlist" />
-                  {wishlist.length > 0 && (
+                  {wishlist?.length > 0 && (
                     <span className="count">
                       {wishlist?.length > 9 ? '9+' : wishlist?.length}
                     </span>
@@ -117,7 +117,7 @@ const DefaultHeaderNav: React.FC<DefaultHeaderNavProps> = ({
                   className="route-link"
                 >
                   <IoBagOutline title="Your shopping bag" />
-                  {bagList.length > 0 && (
+                  {bagList?.length > 0 && (
                     <span className="count">
                       {bagList?.length > 9 ? '9+' : bagList?.length}
                     </span>

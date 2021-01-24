@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
 
 // COMPONENTS:
-import ListItemReviewer from './list-item-reviewer/ListItemReviewer.comp';
+import ListItemReviewer from '../list-item-reviewer/ListItemReviewer.comp';
 import BagInfoViewer from '../bag-info-viewer/BagInfo.comp';
 
 // INTERFACE:
@@ -19,19 +19,25 @@ const BagListWrapper: React.FC<BagListWrapperProps> = ({ bagList }) => {
   return (
     <section className="bagList-wrapper">
       <Container>
-        <h3 className="heading">Items you moved to bag</h3>
-        <Row>
-          <Col sm={12} lg={8}>
-            <ul className="list-container">
-              {bagList?.map(({ id, ...product }: any) => (
-                <ListItemReviewer key={id} {...product} />
-              ))}
-            </ul>
-          </Col>
-          <Col sm={12} lg={4}>
-            <BagInfoViewer />
-          </Col>
-        </Row>
+        {bagList?.length > 0 ? (
+          <>
+            <h3 className="heading">Items you moved to bag</h3>
+            <Row>
+              <Col sm={12} lg={8}>
+                <ul className="list-container">
+                  {bagList?.map(({ id, ...product }: any) => (
+                    <ListItemReviewer key={id} product={product} />
+                  ))}
+                </ul>
+              </Col>
+              <Col sm={12} lg={4}>
+                <BagInfoViewer />
+              </Col>
+            </Row>
+          </>
+        ) : (
+          <h3 className="heading">No items to display :)</h3>
+        )}
       </Container>
     </section>
   );

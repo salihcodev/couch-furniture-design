@@ -3,6 +3,7 @@ import './style.sass';
 
 // UTILITIES:
 import { Link } from 'react-router-dom';
+import { GrAdd } from 'react-icons/gr';
 
 // INTERFACE:
 interface WrapperListItemProps {
@@ -11,7 +12,8 @@ interface WrapperListItemProps {
   imgUrl: any;
   price: number;
   availableColors: Array<[]>;
-  quantity: number;
+  count: number;
+  isWishlist: boolean;
 }
 
 // COMPONENT:=>
@@ -20,7 +22,8 @@ const WrapperListItem: React.FC<WrapperListItemProps> = ({
   slug,
   imgUrl,
   price,
-  quantity,
+  count,
+  isWishlist,
 }) => {
   return (
     <li className="wrapper-list-item">
@@ -33,8 +36,19 @@ const WrapperListItem: React.FC<WrapperListItemProps> = ({
         </div>
         <div className="prod-details">
           <h6 className="prod-name">{name}</h6>
-          <small className="prod-price">{price}€</small>
-          <span className="prod-quantity">quantity: {quantity}</span>
+          {isWishlist ? (
+            <div className="prod-numbers">
+              <span className="price">{price}€</span>
+            </div>
+          ) : (
+            <div className="prod-numbers">
+              <span className="item-count">{count}</span>
+              <span className="multi-icon">
+                <GrAdd />
+              </span>
+              <span className="price">{price}€</span>
+            </div>
+          )}
         </div>
       </Link>
     </li>

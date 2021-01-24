@@ -2,6 +2,7 @@
 import './style.sass';
 
 // UTILITIES:
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsHeart } from 'react-icons/bs';
 import { connect } from 'react-redux';
@@ -22,15 +23,21 @@ const ProdCard: React.FC<ProdCardProps> = ({
   dispatch,
 }) => {
   const { slug, name, imgUrl, featured, price, availableColors } = product;
+  const [clicked, setClicked] = useState<boolean>(false);
+
+  // make add to wishlist button triggered once.
+  const addItemToWishlistOnce = () => {
+    if (!clicked) {
+      setClicked(true);
+      dispatch(addItemToWishlist(product));
+    }
+  };
 
   return (
     <div className="prod-card">
       <div className="prod-card-header">
         {featured && <span className="featured">Featured</span>}
-        <button
-          className="add-to-wishlist"
-          onClick={() => dispatch(addItemToWishlist(product))}
-        >
+        <button className="add-to-wishlist" onClick={addItemToWishlistOnce}>
           <BsHeart />
         </button>
       </div>

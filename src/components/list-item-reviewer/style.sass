@@ -1,0 +1,90 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+// styling:::
+li.added-item
+  display: block
+  color: $alt_gray-3
+  min-height: 5rem
+  display: flex
+  margin: 1rem 0
+  justify-content: space-between
+  .prod-img
+    flex-grow: 1
+    border-radius: 1rem
+    padding: 1rem
+    .img-cont
+      margin: auto
+      width: 8rem
+      height: 8rem
+  .prod-details
+    flex-grow: 3
+    display: flex
+    padding-top: 2rem
+    .prod-info
+      flex-grow: 2
+      height: 100%
+      h5
+      .prod-numbers
+        height: 4rem
+        display: flex
+        align-items: flex-end
+        justify-content: flex-start
+        span
+          margin: 0 0.2rem
+          color: $alt_gray-3
+        span.count
+        span.icon
+          transform: rotate(-45deg)
+        span.price
+    .control-the-prod
+      button
+        display: block
+        color: $alt_cl-1
+        border: none
+        background: transparent
+        &.remove
+        &.move-to-wishlist
+      .change-count
+        display: flex
+        justify-content: space-between
+        margin-top: 1rem
+        button
+          border: 1px solid $alt_gray
+          paddibg: 0.5rem
+          display: block
+          color: $main_white
+          width: 2rem
+          height: 2rem
+          display: flex
+          align-items: center
+          justify-content: center
+          border-radius: 0.2rem
+          &.increase
+            background: $alt_gray-3
+          &.decrease
+            background: $alt_cl-3-d
+
+    h6.prod-origin-price
+      // border: 1px solid
+      padding-top: 2rem
+      color: $alt_cl-4
+      flex-grow: 1
+      display: block
+      font-family: $uni_font
+      text-align: center
+      span
+        margin-left: 0.4rem
+
+    &:not(:last-child)
+      border-bottom: 1px solid $alt_gray
+
+@media screen and ( max-width:  769px)
+  li.added-item
+    display: block
+    text-align: center
+    .prod-details
+      display: block
+    .change-count
+      display: block !important

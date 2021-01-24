@@ -29,10 +29,10 @@ const ToAddListWrapper: React.FC<ToAddListProps> = ({
     <section className="to-add-list-wrapper" style={{ width: `${width}rem` }}>
       <span className="to-be-hoverable"></span>
       <div className="list-container">
-        {listItems.length > 0 ? (
-          <ul className={`list-items ${isWishlist ? 'no-quantity' : null}`}>
+        {listItems?.length > 0 ? (
+          <ul className="list-items">
             {listItems?.map(({ id, ...listItem }: any) => (
-              <WrapperListItem key={id} {...listItem} />
+              <WrapperListItem key={id} {...listItem} isWishlist={isWishlist} />
             ))}
           </ul>
         ) : (

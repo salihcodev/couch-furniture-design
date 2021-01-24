@@ -54,7 +54,7 @@ const MobileHeaderNav: React.FC<Props> = ({
             onClick={closeMobileMenu}
           >
             <IoHeartOutline title="Your wishlist" />
-            {wishlist.length > 0 && (
+            {wishlist?.length > 0 && (
               <span className="count">
                 {wishlist?.length > 9 ? '9+' : wishlist?.length}
               </span>
@@ -76,7 +76,7 @@ const MobileHeaderNav: React.FC<Props> = ({
             onClick={closeMobileMenu}
           >
             <IoBagOutline title="Your shopping bag" />
-            {bagList.length > 0 && (
+            {bagList?.length > 0 && (
               <span className="count">
                 {bagList?.length > 9 ? '9+' : bagList?.length}
               </span>

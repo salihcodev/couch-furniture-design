@@ -9,6 +9,7 @@ import { WiStars } from 'react-icons/wi';
 import { IoBag } from 'react-icons/io5';
 import { connect } from 'react-redux';
 import { addItemToBag } from '../../redux/bag/bag.action';
+import { Link } from 'react-router-dom';
 
 // COMPONENTS:
 import SliderItem from '../slider-item/SlideItem.comp';
@@ -124,7 +125,8 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                   />
                 </div>
                 <SudoButton>
-                  <button
+                  <Link
+                    to="/bag"
                     className="sudo-btn"
                     onClick={() => dispatch(addItemToBag(singleProduct))}
                   >
@@ -132,7 +134,7 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                     <span className="icon">
                       <IoBag />
                     </span>
-                  </button>
+                  </Link>
                 </SudoButton>
               </div>
             </div>
