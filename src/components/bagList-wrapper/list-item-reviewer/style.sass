@@ -1,0 +1,66 @@
+// importing:::
+@import '../../../sass-utl/_transitions'
+@import '../../../sass-utl/_colors'
+@import '../../../sass-utl/_fonts'
+// styling:::
+li.bagList-item
+  display: block
+  color: $alt_gray-3
+  min-height: 10rem
+  display: flex
+  margin: 1rem 0
+  justify-content: space-between
+  flex-wrap: wrap
+  .prod-img
+    flex-grow: 1
+    border-radius: 1rem
+    padding: 1rem
+    .img-cont
+      margin: auto
+      width: 8rem
+      height: 8rem
+  .prod-details
+    padding-top: 2rem
+    flex-grow: 2
+    h6.prod-name
+    span.prod-quantity
+  .control
+    padding-top: 2rem
+    button
+      display: block
+      color: $alt_cl-1
+      border: none
+      background: transparent
+    .change-qunt
+      display: flex
+      justify-content: space-between
+      margin-top: 1rem
+      button
+        border: 1px solid $alt_gray
+        paddibg: 0.5rem
+        display: block
+        color: $alt_gray-3
+        width: 2rem
+        height: 2rem
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 0.3rem
+
+  h6.prod-price
+    padding-top: 2rem
+    color: $alt_cl-4
+    flex-grow: 1
+    display: block
+    font-family: $uni_font
+    text-align-last: right
+    span
+      margin-left: 0.4rem
+
+  &:not(:last-child)
+    border-bottom: 1px solid $alt_gray
+
+@media screen and ( max-width:  769px)
+  li.bagList-item
+    display: block
+    text-align: center

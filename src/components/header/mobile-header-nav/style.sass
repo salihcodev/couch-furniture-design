@@ -41,8 +41,22 @@ nav.mobile-header-nav
         text-transform: uppercase
     li.nav-route.icon-route.bag
       @include icon-route()
+      > section
+        top: 50px
+        right: -10px
+        display: none
+      &:hover
+        > section
+          display: block
     li.nav-route.icon-route.wishlist
       @include icon-route()
+      > section
+        top: 50px
+        right: -30px
+        display: none
+      &:hover
+        > section
+          display: block
 
 // media query:::
 @media screen and ( max-width: 900px)

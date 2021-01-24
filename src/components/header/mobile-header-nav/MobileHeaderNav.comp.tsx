@@ -11,6 +11,7 @@ import {
 } from '../../../redux/mobile-menu/mobileMenu.action';
 
 // IMPORT COMPONENTS:
+import ToAddListWrapper from '../../../components/to-add-list-wrapper/ToAddListWrapper.comp';
 import { ReactComponent as Logo } from '../../../assets/couchFurnitureDesign.logo-min.svg';
 import MobileMenuWrapper from './mobile-menu-wrapper/MobileMenuWrapper.comp';
 
@@ -19,6 +20,8 @@ interface Props {
   toggleMenuVisibility: () => any;
   closeMobileMenu: () => any;
   menuHidden: boolean;
+  bagList: Array<[]>;
+  wishlist: Array<[]>;
 }
 
 // COMPONENT:=>
@@ -26,6 +29,8 @@ const MobileHeaderNav: React.FC<Props> = ({
   toggleMenuVisibility,
   closeMobileMenu,
   menuHidden,
+  bagList,
+  wishlist,
 }) => {
   return (
     <nav className="mobile-header-nav">
@@ -49,8 +54,19 @@ const MobileHeaderNav: React.FC<Props> = ({
             onClick={closeMobileMenu}
           >
             <IoHeartOutline title="Your wishlist" />
-            <span className="count">5</span>
+            {wishlist.length > 0 && (
+              <span className="count">
+                {wishlist?.length > 9 ? '9+' : wishlist?.length}
+              </span>
+            )}
           </NavLink>
+          <ToAddListWrapper
+            listItems={wishlist}
+            width={16}
+            redirectTo="/wishlist"
+            redirectTxt="Go to wishlist"
+            isWishlist={true}
+          />
         </li>
         <li className="nav-route icon-route bag">
           <NavLink
@@ -60,8 +76,18 @@ const MobileHeaderNav: React.FC<Props> = ({
             onClick={closeMobileMenu}
           >
             <IoBagOutline title="Your shopping bag" />
+            {bagList.length > 0 && (
+              <span className="count">
+                {bagList?.length > 9 ? '9+' : bagList?.length}
+              </span>
+            )}
           </NavLink>
-          <span className="count">5</span>
+          <ToAddListWrapper
+            listItems={bagList}
+            width={16}
+            redirectTxt="Checkout"
+            redirectTo="/bag"
+          />
         </li>
       </ul>
       {menuHidden ? null : <MobileMenuWrapper />}
@@ -74,8 +100,14 @@ const mapDispatchToProps = (dispatch: any) => ({
   closeMobileMenu: () => dispatch(closeMobileMenu()),
 });
 
-const mapStateToProps = ({ mobileMenu: { menuHidden } }: any) => ({
+const mapStateToProps = ({
+  mobileMenu: { menuHidden },
+  bag: { bagList },
+  wishlist: { wishlist },
+}: any) => ({
   menuHidden: menuHidden,
+  bagList: bagList,
+  wishlist: wishlist,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MobileHeaderNav);
