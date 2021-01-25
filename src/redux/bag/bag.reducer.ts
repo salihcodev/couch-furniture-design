@@ -1,5 +1,5 @@
 import bagActionTypes from './bag.actionTypes';
-import { itemToRemove, itemToAdd } from './hooks.util';
+import { itemToRemove, itemToAdd, itemToDecrease } from './hooks.util';
 
 const INITIAL_STATE = {
   bagList: [],
@@ -11,7 +11,8 @@ const bagReducer = (state = INITIAL_STATE, action: any) => {
     case bagActionTypes.ADD_ITEM_TO_BAG:
       const { updateBagListAfterAdd } = itemToAdd(
         state.bagList,
-        action.payload
+        action.payload.product,
+        action.payload.count
       );
       return { ...state, bagList: updateBagListAfterAdd };
 
@@ -21,6 +22,13 @@ const bagReducer = (state = INITIAL_STATE, action: any) => {
         action.payload
       );
       return { ...state, bagList: updateBagListAfterRemove };
+
+    case bagActionTypes.DECREASE_BAG_ITEM:
+      const { updateBagListAfterDecrease } = itemToDecrease(
+        state.bagList,
+        action.payload
+      );
+      return { ...state, bagList: updateBagListAfterDecrease };
 
     default:
       return state;

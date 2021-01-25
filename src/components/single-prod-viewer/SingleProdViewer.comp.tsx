@@ -2,6 +2,7 @@
 import './style.sass';
 
 // UTILITIES:
+import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -41,6 +42,13 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   const items = images.map((img: any, idx: any) => (
     <SliderItem img={img} idx={idx} key={idx} />
   ));
+
+  const [requestedQuantity, setRequestedQuantity] = useState<number>(1);
+
+  const handelItemQuantity = (e: any) => {
+    const { value } = e.target;
+    setRequestedQuantity(+value);
+  };
 
   return (
     <section className="single-prod-viewer">
@@ -121,14 +129,22 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                     inputMode="decimal"
                     placeholder="1"
                     min="1"
-                    max="10"
+                    max="8"
+                    onChange={handelItemQuantity}
                   />
                 </div>
                 <SudoButton>
                   <Link
                     to="/bag"
                     className="sudo-btn"
-                    onClick={() => dispatch(addItemToBag(singleProduct))}
+                    onClick={() =>
+                      dispatch(
+                        addItemToBag({
+                          product: singleProduct,
+                          count: requestedQuantity,
+                        })
+                      )
+                    }
                   >
                     <span className="txt">In the bag</span>
                     <span className="icon">

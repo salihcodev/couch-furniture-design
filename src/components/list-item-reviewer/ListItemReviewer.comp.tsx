@@ -7,7 +7,11 @@ import { HiTag } from 'react-icons/hi';
 import { IoMdAdd } from 'react-icons/io';
 import { MdRemove } from 'react-icons/md';
 import { connect } from 'react-redux';
-import { removeBagItem, addItemToBag } from '../../redux/bag/bag.action';
+import {
+  removeBagItem,
+  addItemToBag,
+  decreaseBagItem,
+} from '../../redux/bag/bag.action';
 import { removeWishListItem } from '../../redux/wishlist/wishlist.action';
 import { GrAdd } from 'react-icons/gr';
 
@@ -77,11 +81,21 @@ const ListItemReviewer: React.FC<ListItemReviewerProps> = ({
             <div className="change-count">
               <button
                 className="increase"
-                onClick={() => dispatch(addItemToBag(product))}
+                onClick={() =>
+                  dispatch(
+                    addItemToBag({
+                      product,
+                      count: 1,
+                    })
+                  )
+                }
               >
                 <IoMdAdd />
               </button>
-              <button className="decrease">
+              <button
+                className="decrease"
+                onClick={() => dispatch(decreaseBagItem(slug))}
+              >
                 <MdRemove />
               </button>
             </div>
