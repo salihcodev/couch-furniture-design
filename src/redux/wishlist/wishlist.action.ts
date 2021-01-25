@@ -1,11 +1,11 @@
 import bagActionTypes from './wishlist.actionTypes';
 
-export const addItemToWishlist = (product: any) => ({
-  type: bagActionTypes.ADD_ITEM_TO_WISHLIST,
+export const toggleWishlistItem = (product: any) => ({
+  type: bagActionTypes.TOGGLE_WISHLIST_ITEM,
   payload: product,
 });
 
-export const removeWishListItem = (product: any) => ({
+export const removeWishListItem = (slug: any) => ({
   type: bagActionTypes.REMOVE_WISHLIST_ITEM,
-  payload: product,
+  payload: slug,
 });

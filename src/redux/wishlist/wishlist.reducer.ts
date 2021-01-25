@@ -1,4 +1,5 @@
 import wishlistActionTypes from './wishlist.actionTypes';
+import { removeWishListItem, toggleWishlistItem } from './hook.util';
 
 const INITIAL_STATE = {
   wishlist: [],
@@ -6,16 +7,19 @@ const INITIAL_STATE = {
 
 const wishlistReducer = (state = INITIAL_STATE, action: any) => {
   switch (action.type) {
-    case wishlistActionTypes.ADD_ITEM_TO_WISHLIST:
-      return { ...state, wishlist: [...state.wishlist, action.payload] };
+    case wishlistActionTypes.TOGGLE_WISHLIST_ITEM:
+      const { updatedWishListAfterWished } = toggleWishlistItem(
+        state.wishlist,
+        action.payload
+      );
+      return { ...state, wishlist: updatedWishListAfterWished };
 
     case wishlistActionTypes.REMOVE_WISHLIST_ITEM:
-      const filteredWishListAfterRemove = () => {
-        return state.wishlist?.filter(
-          ({ slug }: any) => slug !== action.payload
-        );
-      };
-      return { ...state, wishlist: filteredWishListAfterRemove() };
+      const { updatedWishListAfterRemove } = removeWishListItem(
+        state.wishlist,
+        action.payload
+      );
+      return { ...state, wishlist: updatedWishListAfterRemove };
 
     default:
       return state;

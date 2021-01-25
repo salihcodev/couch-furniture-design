@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { BsHeart } from 'react-icons/bs';
 import { connect } from 'react-redux';
 import { redirectToSingleProd } from '../../redux/products/products.action';
-import { addItemToWishlist } from '../../redux/wishlist/wishlist.action';
+import { toggleWishlistItem } from '../../redux/wishlist/wishlist.action';
 
 // INTERFACE:
 interface ProdCardProps {
@@ -22,22 +22,42 @@ const ProdCard: React.FC<ProdCardProps> = ({
   parentRoute,
   dispatch,
 }) => {
-  const { slug, name, imgUrl, featured, price, availableColors } = product;
-  const [clicked, setClicked] = useState<boolean>(false);
+  const {
+    slug,
+    name,
+    imgUrl,
+    featured,
+    price,
+    availableColors,
+    wished,
+  } = product;
 
+  // LEGACY JUST FOR TESTING :)
+  // const [clicked, setClicked] = useState<boolean>(false);
   // make add to wishlist button triggered once.
-  const addItemToWishlistOnce = () => {
-    if (!clicked) {
-      setClicked(true);
-      dispatch(addItemToWishlist(product));
-    }
-  };
+  // const addItemToWishlistOnce = () => {
+  //   if (!clicked) {
+  //     setClicked(true);
+  //     dispatch(toggleWishlistItem(product));
+  //   }
+  // };
+
+  const [addedStyle, setAddedStyle] = useState<boolean>(false);
 
   return (
     <div className="prod-card">
       <div className="prod-card-header">
         {featured && <span className="featured">Featured</span>}
-        <button className="add-to-wishlist" onClick={addItemToWishlistOnce}>
+        <button
+          style={{
+            background: addedStyle ? '#db8c80' : '',
+            color: addedStyle ? 'white' : '',
+          }}
+          className="add-to-wishlist"
+          onClick={() =>
+            dispatch(toggleWishlistItem(product), setAddedStyle(!addedStyle))
+          }
+        >
           <BsHeart />
         </button>
       </div>
