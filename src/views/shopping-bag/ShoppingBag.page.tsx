@@ -8,11 +8,9 @@ import Hero from '../../components/hero/Hero.comp';
 import BagListWrapper from '../../components/bagList-wrapper/BagListWrapper.comp';
 
 // INTERFACE:
-
-// App interface:
 interface Props {}
 
-// Home Page:=>
+// Shopping Page:=>
 const ShoppingBag: React.FC<Props> = () => {
   return (
     <main className="shopping-bag-page">

@@ -14,3 +14,7 @@ export const decreaseBagItem = (slug: any) => ({
   type: bagActionTypes.DECREASE_BAG_ITEM,
   payload: slug,
 });
+
+// export const bagTotalPrice = () => ({
+//   type: bagActionTypes.GET_BAG_TOTAL,
+// });

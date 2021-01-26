@@ -17,13 +17,22 @@ section.bag-info-viewer
     padding: 2rem 1rem
     border-bottom-left-radius: 0
     border-bottom-right-radius: 0
-    .total-count
+    .total-count,
+    .total-taxes
       span.total-txt
         display: block
         margin-bottom: 0.5rem
         text-transform: uppercase
+        font-weight: bold
+        color: $alt_cl-3-d
+    .total-count
       h4.total-number
         font-family: $uni_font
+    .total-taxes
+      margin-top: 1.5rem
+      padding-top: 1rem
+      border-top: 1px solid $alt_gray
+      h5.total-number
     .checkout-btn
       button.checkout
         margin-top: 5rem

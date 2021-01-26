@@ -3,10 +3,10 @@ import { itemToRemove, itemToAdd, itemToDecrease } from './hooks.util';
 
 const INITIAL_STATE = {
   bagList: [],
-  bagTotalPrice: 0,
 };
 
 const bagReducer = (state = INITIAL_STATE, action: any) => {
+  // const { bagTotal } = getBagTotal(state.bagList);
   switch (action.type) {
     case bagActionTypes.ADD_ITEM_TO_BAG:
       const { updateBagListAfterAdd } = itemToAdd(
