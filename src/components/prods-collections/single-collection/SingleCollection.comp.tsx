@@ -2,7 +2,6 @@
 import './style.sass';
 
 // UTILITIES:
-import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import ProdCard from '../../prod-card/ProdCard.comp';
@@ -28,13 +27,9 @@ const SingleCollection: React.FC<SingleCollectionProps> = ({
       {/* products block */}
 
       <div className="collection-items">
-        <Row>
-          {products.map(({ id, ...product }: any) => (
-            <Col xs={12} sm={6} xl={4}>
-              <ProdCard key={id} product={product} parentRoute={routeName} />
-            </Col>
-          ))}
-        </Row>
+        {products.map(({ id, ...product }: any) => (
+          <ProdCard key={id} product={product} parentRoute={routeName} />
+        ))}
       </div>
     </section>
   );

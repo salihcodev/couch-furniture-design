@@ -2,7 +2,7 @@
 import './style.sass';
 
 // UTILITIES:
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 // COMPONENTS:
 import ProdCard from '../prod-card/ProdCard.comp';
@@ -19,23 +19,15 @@ const CollectionViewer: React.FC<CollectionViewerProps> = ({
   products,
 }) => {
   return (
-    <section className="single-collection">
+    <section className="collection-viewer">
       {/* products block */}
-      <div className="collection-items">
-        <Container fluid>
-          <Row>
-            {products.map(({ id, ...product }: any) => (
-              <Col xs={12} sm={6} md={4} xl={3}>
-                <ProdCard
-                  key={id}
-                  product={product}
-                  parentRoute={parentRoute}
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </div>
+      <Container fluid>
+        <div className="collection-items">
+          {products.map(({ id, ...product }: any) => (
+            <ProdCard key={id} product={product} parentRoute={parentRoute} />
+          ))}
+        </div>
+      </Container>
     </section>
   );
 };

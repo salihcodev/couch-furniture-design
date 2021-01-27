@@ -1,0 +1,30 @@
+// importing:::
+@import '../../sass-utl/_transitions'
+@import '../../sass-utl/_colors'
+@import '../../sass-utl/_fonts'
+@import '../../sass-utl/_mixins'
+@import '../../sass-utl/_animation'
+
+// styling:::
+section.filtered-prods-wrapper
+  animation: graded-opacity ease-in-out 0.3s
+  h5.heading
+    text-align: center
+    color: $alt_gray-3
+    span.results-count
+      font-weight: bold
+      color: $alt_cl-3-d
+  section.result-list-wrapper
+    margin-top: 3rem
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    .prod-card
+      width: 10rem
+      min-height: 12rem
+      margin: 0.2rem
+
+@media screen and ( max-width:  1200px)
+  section.filtered-prods-wrapper
+    margin-top: 3rem

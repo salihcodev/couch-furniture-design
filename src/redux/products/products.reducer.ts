@@ -1,24 +1,32 @@
 import prodsActionTypes from './products.actionTypes';
 import { categories, limitedAndNew } from '../../api-mocks/API.data';
+import { getAllProds, filterByName } from './hook.util';
+
+// extract all prods in all categories at once
+const { storedAllProds } = getAllProds(categories);
 
 const INITIAL_STATE = {
   categories: categories,
+  allProducts: storedAllProds,
   itemsToTest: limitedAndNew,
+  filteredResult: [],
   singleProduct: {},
 };
 
 const productsReducer = (state = INITIAL_STATE, action: any) => {
   switch (action.type) {
     case prodsActionTypes.REDIRECT_TO_SINGLE_PROD:
-      // todo: make a reusable HOOK for extracting allProds, filtering.
-      let allProds: any = [];
-      categories.map(({ products }: any) =>
-        products.map((item: any) => allProds.push(item))
-      );
-      const currentSingleProd = allProds.filter(
+      const currentSingleProd = state.allProducts.filter(
         ({ slug }: any) => slug === action.payload
       );
       return { ...state, singleProduct: { ...currentSingleProd } };
+
+    case prodsActionTypes.FILTER_WITH_SEARCH_TERM:
+      const { updatedFilteredResult } = filterByName(
+        state.allProducts,
+        action.payload
+      );
+      return { ...state, filteredResult: updatedFilteredResult };
 
     default:
       return state;

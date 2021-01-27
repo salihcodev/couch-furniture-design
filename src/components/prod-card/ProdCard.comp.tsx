@@ -12,7 +12,7 @@ import { toggleWishlistItem } from '../../redux/wishlist/wishlist.action';
 // INTERFACE:
 interface ProdCardProps {
   product: any;
-  parentRoute: string;
+  parentRoute?: string;
   dispatch: any;
 }
 
@@ -22,15 +22,7 @@ const ProdCard: React.FC<ProdCardProps> = ({
   parentRoute,
   dispatch,
 }) => {
-  const {
-    slug,
-    name,
-    imgUrl,
-    featured,
-    price,
-    availableColors,
-    wished,
-  } = product;
+  const { slug, name, imgUrl, featured, price, availableColors } = product;
 
   // LEGACY JUST FOR TESTING :)
   // const [clicked, setClicked] = useState<boolean>(false);
@@ -47,7 +39,7 @@ const ProdCard: React.FC<ProdCardProps> = ({
   return (
     <div className="prod-card">
       <div className="prod-card-header">
-        {featured && <span className="featured">Featured</span>}
+        {featured && <small className="featured">Featured</small>}
         <button
           style={{
             background: addedStyle ? '#db8c80' : '',
@@ -66,17 +58,22 @@ const ProdCard: React.FC<ProdCardProps> = ({
         to={`shop/${parentRoute}/${slug}`}
         style={{ background: `url(${imgUrl}) center/contain no-repeat` }}
         onClick={() => dispatch(redirectToSingleProd(slug))}
-      >
-        <div className="prod-card-footer">
-          <strong className="price">{price}</strong>
+      ></Link>
+      <div className="temp-info">
+        <div>
+          <strong className="price">{price} €</strong>
           <p className="name">{name}</p>
-          <ul className="av-colors">
-            {availableColors.map((clr: string) => (
-              <li className="clr" key={clr} style={{ background: clr }}></li>
-            ))}
-          </ul>
         </div>
-      </Link>
+      </div>
+      <div className="prod-card-footer">
+        <strong className="price">{price} €</strong>
+        <p className="name">{name}</p>
+        <ul className="av-colors">
+          {availableColors.map((clr: string) => (
+            <li className="clr" key={clr} style={{ background: clr }}></li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

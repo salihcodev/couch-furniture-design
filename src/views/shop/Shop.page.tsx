@@ -3,18 +3,22 @@ import './style.sass';
 
 // UTILITIES:
 import { Container, Row, Col } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
 // COMPONENTS:
 import Hero from '../../components/hero/Hero.comp';
 import ProdsWrapper from '../../components/prods-wrapper/ProdsWrapper.comp';
 import ProdsFilter from '../../components/prods-filter/ProdsFilter.comp';
 import MostHitProd from '../../components/most-hit-prod/MostHitProd.comp';
+import FilteredProdsWrapper from '../../components/filtered-prods-wrapper/FilteredProdsWrapper.comp';
 
 // INTERFACE:
-interface ShopPageProps {}
+interface ShopPageProps {
+  filteredResult: Array<[]>;
+}
 
 // Home Page:=>
-const Shop: React.FC<ShopPageProps> = () => {
+const Shop: React.FC<ShopPageProps> = ({ filteredResult }) => {
   return (
     <main className="shop-page">
       {/* Hero */}
@@ -30,7 +34,11 @@ const Shop: React.FC<ShopPageProps> = () => {
 
           {/* shop prods wrapper */}
           <Col sm={12} md={9} xl={8}>
-            <ProdsWrapper />
+            {filteredResult.length > 0 ? (
+              <FilteredProdsWrapper filteredResult={filteredResult} />
+            ) : (
+              <ProdsWrapper />
+            )}
           </Col>
 
           {/* right hans side column, show most hit prod & display ads. */}
@@ -46,4 +54,8 @@ const Shop: React.FC<ShopPageProps> = () => {
   );
 };
 
-export default Shop;
+const mapStateToProps = ({ products: { filteredResult } }: any) => ({
+  filteredResult: filteredResult,
+});
+
+export default connect(mapStateToProps)(Shop);

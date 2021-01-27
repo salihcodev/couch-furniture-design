@@ -13,6 +13,9 @@ section.prods-filter
     display: flex
     align-items: flex-start
     justify-content: space-between
+    h5
+      font-weight: bold
+      color: $alt_gray-3
     span.icon
       font-size: 1.3rem
       width: 2.1rem
@@ -22,3 +25,52 @@ section.prods-filter
       justify-content: center
       border-radius: 50%
       color: $alt_gray-1
+  .filter-body
+    .by
+      &:not(:first-child)
+        border-top: 1px solid $alt_gray
+        margin-top: 1rem
+      h6
+        margin-bottom: 0.8rem
+        margin-top: 1rem
+        display: block
+        font-weight: bold
+        text-transform: uppercase
+        color: $alt_cl-1
+        font-size: 13px
+      &.by-name
+        padding-bottom: 1rem
+        small
+        input[type='text']
+          width: 100%
+          border: 1px solid #ddd
+          border-radius: 0.2rem
+          padding: 0.2rem
+          padding-left: 0.4rem
+          caret-color: $alt_cl-3
+          color: $alt_gray-3
+        .error-wrapper
+          small
+            font-weight: bold
+            &.short-term
+              color: $alt_cl-3-d
+              font-weight: bold
+            &.mess-term
+              color: $alt_gray-3
+              span
+                font-size: 15px
+                color: $alt_cl-4
+
+      &.by-category
+        padding-bottom: 1rem
+        small
+        .cat
+          display: flex
+          align-items: center
+          input[type='checkbox']
+            margin-top: -0.4rem
+          label
+            margin-left: 0.4rem
+            small
+              text-transform: uppercase
+              color: $alt_gray-3
