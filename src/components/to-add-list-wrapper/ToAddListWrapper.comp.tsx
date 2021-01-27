@@ -52,9 +52,11 @@ const ToAddListWrapper: React.FC<ToAddListProps> = ({
         )}
       </div>
       <div className="redirect">
-        <h6 className="total-number">
-          bag total: {bagTotalPrice.toFixed(2)} €
-        </h6>
+        {!isWishlist && (
+          <h6 className="total-number">
+            bag total: {bagTotalPrice.toFixed(2)} €
+          </h6>
+        )}
         <SudoButton>
           <Link to={redirectTo} className="redirect-link sudo-btn">
             {redirectTxt}
