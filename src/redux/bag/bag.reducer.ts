@@ -6,7 +6,6 @@ const INITIAL_STATE = {
 };
 
 const bagReducer = (state = INITIAL_STATE, action: any) => {
-  // const { bagTotal } = getBagTotal(state.bagList);
   switch (action.type) {
     case bagActionTypes.ADD_ITEM_TO_BAG:
       const { updateBagListAfterAdd } = itemToAdd(

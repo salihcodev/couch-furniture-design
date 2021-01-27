@@ -25,6 +25,16 @@ const ToAddListWrapper: React.FC<ToAddListProps> = ({
   redirectTxt,
   isWishlist,
 }) => {
+  const tax = 1.09;
+  const collectedPrices = listItems.map(
+    ({ count, price }: any) => count * price * tax
+  );
+
+  const bagTotalPrice = collectedPrices.reduce(
+    (acc: any, curr: any) => acc + curr,
+    0
+  );
+
   return (
     <section className="to-add-list-wrapper" style={{ width: `${width}rem` }}>
       <span className="to-be-hoverable"></span>
@@ -42,6 +52,9 @@ const ToAddListWrapper: React.FC<ToAddListProps> = ({
         )}
       </div>
       <div className="redirect">
+        <h6 className="total-number">
+          bag total: {bagTotalPrice.toFixed(2)} €
+        </h6>
         <SudoButton>
           <Link to={redirectTo} className="redirect-link sudo-btn">
             {redirectTxt}
