@@ -1,8 +1,8 @@
 import prodsActionTypes from './products.actionTypes';
 
-export const redirectToSingleProd = (id: number) => ({
+export const redirectToSingleProd = (slug: string) => ({
   type: prodsActionTypes.REDIRECT_TO_SINGLE_PROD,
-  payload: id,
+  payload: slug,
 });
 
 export const searchTermSearch = (term: string | null) => ({

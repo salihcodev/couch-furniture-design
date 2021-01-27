@@ -12,17 +12,20 @@ import { toggleWishlistItem } from '../../redux/wishlist/wishlist.action';
 // INTERFACE:
 interface ProdCardProps {
   product: any;
-  parentRoute?: string;
   dispatch: any;
 }
 
 // COMPONENT:=>
-const ProdCard: React.FC<ProdCardProps> = ({
-  product,
-  parentRoute,
-  dispatch,
-}) => {
-  const { slug, name, imgUrl, featured, price, availableColors } = product;
+const ProdCard: React.FC<ProdCardProps> = ({ product, dispatch }) => {
+  const {
+    slug,
+    name,
+    category,
+    imgUrl,
+    featured,
+    price,
+    availableColors,
+  } = product;
 
   // LEGACY JUST FOR TESTING :)
   // const [clicked, setClicked] = useState<boolean>(false);
@@ -55,7 +58,7 @@ const ProdCard: React.FC<ProdCardProps> = ({
       </div>
       <Link
         className="card-wrapper"
-        to={`shop/${parentRoute}/${slug}`}
+        to={`/shop/${category}/${slug}`}
         style={{ background: `url(${imgUrl}) center/contain no-repeat` }}
         onClick={() => dispatch(redirectToSingleProd(slug))}
       ></Link>

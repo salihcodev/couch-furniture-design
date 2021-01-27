@@ -28,7 +28,7 @@ const SingleCollection: React.FC<SingleCollectionProps> = ({
 
       <div className="collection-items">
         {products.map(({ id, ...product }: any) => (
-          <ProdCard key={id} product={product} parentRoute={routeName} />
+          <ProdCard key={id} product={product} />
         ))}
       </div>
     </section>

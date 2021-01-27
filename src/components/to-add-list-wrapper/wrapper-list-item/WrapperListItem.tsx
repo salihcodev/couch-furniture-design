@@ -4,30 +4,39 @@ import './style.sass';
 // UTILITIES:
 import { Link } from 'react-router-dom';
 import { GrAdd } from 'react-icons/gr';
+import { connect } from 'react-redux';
+import { redirectToSingleProd } from '../../../redux/products/products.action';
 
 // INTERFACE:
 interface WrapperListItemProps {
   name: string;
   slug: string;
+  category: string;
   imgUrl: any;
   price: number;
   availableColors: Array<[]>;
   count: number;
   isWishlist: boolean;
+  dispatch: any;
 }
 
 // COMPONENT:=>
 const WrapperListItem: React.FC<WrapperListItemProps> = ({
   name,
   slug,
+  category,
   imgUrl,
   price,
   count,
   isWishlist,
+  dispatch,
 }) => {
   return (
     <li className="wrapper-list-item">
-      <Link to={slug}>
+      <Link
+        to={`/shop/${category}/${slug}`}
+        onClick={() => dispatch(redirectToSingleProd(slug))}
+      >
         <div className="prod-img">
           <div
             className="img-cont"
@@ -55,4 +64,4 @@ const WrapperListItem: React.FC<WrapperListItemProps> = ({
   );
 };
 
-export default WrapperListItem;
+export default connect()(WrapperListItem);

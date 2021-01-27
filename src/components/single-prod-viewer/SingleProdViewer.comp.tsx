@@ -11,6 +11,7 @@ import { IoBag } from 'react-icons/io5';
 import { connect } from 'react-redux';
 import { addItemToBag } from '../../redux/bag/bag.action';
 import { Link } from 'react-router-dom';
+import { FiInfo } from 'react-icons/fi';
 
 // COMPONENTS:
 import SliderItem from '../slider-item/SlideItem.comp';
@@ -19,18 +20,21 @@ import SudoButton from '../sudo-button/SudoButton.comp';
 // INTERFACE:
 interface SingleProdViewerProps {
   singleProduct: any;
+  bagList: Array<[]>;
   dispatch: any;
 }
 
 // COMPONENT:=>
 const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   singleProduct,
+  bagList,
   dispatch,
 }) => {
   const {
     images,
     name,
     price,
+    slug,
     simiDesc,
     dispatchAs,
     provisional,
@@ -39,16 +43,23 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
     featured,
   } = singleProduct;
 
+  // get total bag price with total tax.
   const items = images.map((img: any, idx: any) => (
     <SliderItem img={img} idx={idx} key={idx} />
   ));
 
+  // store input value
   const [requestedQuantity, setRequestedQuantity] = useState<number>(1);
-
   const handelItemQuantity = (e: any) => {
     const { value } = e.target;
+    // convert input value to number '+' and add it.
     setRequestedQuantity(+value);
   };
+
+  // get the count of the current prod if it is already in the bag
+  const isTheCurrentProdInBag: object | any = bagList.find(
+    (item: any) => item.slug === slug
+  );
 
   return (
     <section className="single-prod-viewer">
@@ -74,6 +85,21 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
           </Col>
           <Col sm={12} lg={5} xl={4}>
             <div className="wing prod-info">
+              {isTheCurrentProdInBag && (
+                <div className="added-to-bag">
+                  <small className="txt">
+                    You add{' '}
+                    <span className="count-num">
+                      ({isTheCurrentProdInBag?.count})
+                    </span>{' '}
+                    items of this product to your bag.
+                  </small>
+                  <span className="icon">
+                    <FiInfo />
+                  </span>
+                </div>
+              )}
+
               <div className="basic">
                 <h3 className="prod-title">{name}</h3>
                 <p className="simi-desc">{simiDesc}</p>
@@ -127,10 +153,10 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
                     name="quantity"
                     id="add-to-bag"
                     inputMode="decimal"
-                    placeholder="1"
                     min="1"
                     max="8"
                     onChange={handelItemQuantity}
+                    placeholder="1"
                   />
                 </div>
                 <SudoButton>
@@ -161,4 +187,8 @@ const SingleProdViewer: React.FC<SingleProdViewerProps> = ({
   );
 };
 
-export default connect()(SingleProdViewer);
+const mapStateToProps = ({ bag: { bagList } }: any) => ({
+  bagList: bagList,
+});
+
+export default connect(mapStateToProps)(SingleProdViewer);

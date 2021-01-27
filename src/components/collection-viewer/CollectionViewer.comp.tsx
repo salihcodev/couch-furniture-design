@@ -24,7 +24,7 @@ const CollectionViewer: React.FC<CollectionViewerProps> = ({
       <Container fluid>
         <div className="collection-items">
           {products.map(({ id, ...product }: any) => (
-            <ProdCard key={id} product={product} parentRoute={parentRoute} />
+            <ProdCard key={id} product={product} />
           ))}
         </div>
       </Container>
